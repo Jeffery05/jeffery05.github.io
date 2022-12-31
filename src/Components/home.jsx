@@ -1,21 +1,44 @@
 import React, { Component } from "react";
+import potrait from "./images/JefferyWebPhoto.jpg"
+
 export default function Home() {
   return (
-    <div className="container-fluid jumbotron jumbotron-welcome py-5">
-      <div className="container">
-        <row>
-          <h1 className="h1-Welcome"><strong>JEFFERY HU</strong></h1>
-        </row>
-        <row>
-          <h3>I am a </h3>
-            <div class="slider">
-              <div class="slider-t1">Leader</div>
-              <div class="slider-t2">Problem Solver</div>
-              <div class="slider-t2">Lifelong Learner</div>
-              <div class="slider-t2">Risktaker</div>
-              <div class="slider-t2">Teammate</div>
+    <div>
+      <div className="container-fluid jumbotron jumbotron-welcome py-5">
+        <div className="container">
+          <row>
+            <h1 className="h1-Welcome">
+              <strong>JEFFERY HU</strong>
+            </h1>
+          </row>
+          <row>
+            <h3>I am a </h3>
+            <div className="slider">
+              <div className="slider-t1">Leader</div>
+              <div className="slider-t2">Problem Solver</div>
+              <div className="slider-t2">Lifelong Learner</div>
+              <div className="slider-t2">Risktaker</div>
+              <div className="slider-t2">Teammate</div>
             </div>
-        </row>
+          </row>
+        </div>
+      </div>
+      <div className="row home-bg">
+        <div className="col-md-6">
+          <h1 className="text-align: center; margin-bottom: 2%;">
+            Hi there! Welcome to my website!
+          </h1>
+          <p>
+            My name is Jeffery Hu and I am currently a grade 12 student in the
+            MaCS program (Math and Computer Science program) at William Lyon
+            Mackenzie CI. Feel free to take a look around my website that I
+            built using HTML, CSS, and JavaScript! It features some of my past
+            coding projects, achievements, and a little bit more about myself.
+          </p>
+        </div>
+        <div className="col-md-6; rounded img-fluid">
+          <img src={potrait} alt="Jeffery Hu Potrait" />
+        </div>
       </div>
     </div>
   );
