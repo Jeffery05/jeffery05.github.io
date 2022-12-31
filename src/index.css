@@ -1,5 +1,17 @@
-﻿.h1-Welcome{
-  text-align:center; font-size:100px; color:rgb(94, 167, 193); font-family: verdana; padding-top: 10%
+﻿:root {
+  --primary: #bc4123;
+  --secondary: #2b3452;
+  --text: #fff;
+  --text-interact: #3b7196;
+  --accent-text: #9ccedf;
+}
+
+.h1-Welcome{
+  text-align:center;
+  font-size:100px; 
+  color: var(--accent-text); 
+  font-family: verdana; 
+  margin-top: 15%
 }
 
 /* Wrapping element */
@@ -23,9 +35,56 @@ textarea {
 p {font-size: 18px;}
 
 .jumbotron-welcome{
-  background: url('images/MainPageBackground.webp') no-repeat fixed;
+  background: url('images/MainPageBackground.svg') no-repeat fixed;
 }
 
+.slider {
+  height: 30px;
+  padding-left: 10px;
+  overflow: hidden;
+}
+
+.slider div {
+  height: 30px;
+  margin-bottom: 10px;
+  padding: 2px 5px;
+  text-align: left;
+}
+
+.slider-t1 {
+  color: #134f5c;
+  animation: slide 7s linear infinite;
+}
+
+.slider-t2 {
+  color: #446fa7;
+}
+
+.slider-t3 {
+  color: #1e89a1;
+}
+
+.slider-t4 {
+  color: #2a4c94;
+}
+
+.slider-t5 {
+  color: #26aa68;
+}
+
+@keyframes slide {
+  0% {margin-top: -200px;}
+  10% {margin-top: -162px;}
+  20% {margin-top: -162px;}
+  30% {margin-top: -122px;}
+  40% {margin-top: -122px;}
+  50% {margin-top: -82px;}
+  60% {margin-top: -82px;}
+  70% {margin-top: -42px;}
+  80% {margin-top: -42px;}
+  90% {margin-top: -2px;}
+  100% {margin-top: -2px;}
+}
 
 /* Responsive: Portrait tablets and up */
 @media screen and (min-width: 768px) {
@@ -81,20 +140,16 @@ p {font-size: 18px;}
 
 .jumbotron{
   box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0);
-  height: 75vh;
+  height: 100vh;
   background-size: cover;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
-:root {
-  --primary: #bc4123;
-  --secondary: #2b3452;
-}
+
 body {
   margin: 0;
-  padding-top: 50px;
-  padding-bottom: 20px;
+  /* padding-bottom: 20px; */
   font-family: "Poppins";
   background-color: var(--secondary) !important;
 }
@@ -116,12 +171,18 @@ button {
 }
 
 /* navbar */
+header {
+  position: fixed;
+  top: 20px;
+  width: 100%;
+}
 header nav {
   display: flex;
   gap: 16px;
   justify-content: end;
   max-width: 1200px;
   margin: 0 auto;
+  align-items: center;
 }
 header nav h1 {
   margin-right: auto;
@@ -129,16 +190,22 @@ header nav h1 {
 }
 header nav a{
   text-decoration: none;
-  padding: 6px;
+  font-size: 1.25rem;
   border-radius: 4px;
-  color:#fff;
+  color:var(--text);
+  padding: 0.5rem;
+  transition: 0.3s;
 }
-header nav a.active {
+
+header nav a:hover, header nav a:focus, header nav a:active {
+  color:var(--text-interact);
+  background: var(--accent-text);
+}
+/* header nav a.active {
   background: var(--primary);
-}
+} */
 
 /* page content */
 main {
-  max-width: 1200px;
-  margin: 40px auto;
+  margin: 0 auto;
 }
