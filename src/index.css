@@ -1,21 +1,45 @@
 ﻿:root {
   --primary: #bc4123;
-  --secondary: #2b3452;
-  --text: #fff;
+  --secondary: #abd7e6;
+  --text: #000000;
   --text-interact: #3b7196;
   --accent-text: #9ccedf;
+  --hill-color: #071219;
+  --sky-color: #2c8aab;
 }
 
-.h1-Welcome{
+h1.h1-Welcome{
   text-align:center;
   font-size:100px; 
   color: var(--accent-text); 
   font-family: verdana; 
-  margin-top: 15%
+  /* margin-top: 15% */
+  /* transform: translateY(15%); */
 }
 
+.home-bg h1 {
+  margin-bottom: 30px;
+}
+/* .home-bg img {
+  border-radius: 100%;
+  aspect-ratio: 1 / 1;
+} */
+.portrait {
+  overflow: hidden;
+  aspect-ratio: 1 / 1;
+  border-radius: 100%;
+  padding: 0 !important;
+}
+.portrait img {
+  max-width: 100%;
+}
 .home-bg{
-  background-color: black;
+  /* background-color: var(--hill-color); */
+  height: 100vh;
+  padding: 50px;
+  align-items: center;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 20px 0px var(--hill-color);
 }
 
 .about{
@@ -42,14 +66,20 @@ textarea {
 
 p {font-size: 18px;}
 
-.jumbotron-welcome{
+.jumbotron-welcome, .home{
   background: url('Components/images/MainPageBackground.svg') no-repeat fixed;
+  background-size: cover;
+}
+
+row {
+  text-align: center;
 }
 
 .slider {
   height: 30px;
   padding-left: 10px;
   overflow: hidden;
+  display: inline-block;
 }
 
 .slider div {
@@ -133,10 +163,11 @@ p {font-size: 18px;}
   border-top: 0px;
 }
 
-.jumbotron{
+.jumbotron, .home > .container {
   box-shadow: inset 0 0 0 100vw rgba(0, 0, 0, 0);
   height: 100vh;
   background-size: cover;
+  transform: translateY(25%);
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
@@ -149,7 +180,6 @@ body {
   background-color: var(--secondary) !important;
 }
 * {
-  color: #fff;
   margin: 0;
 }
 p {
@@ -159,7 +189,7 @@ button {
   border: 0;
   padding: 8px;
   border-radius: 4px;
-  color: white;
+  color: var(--text);
   background: var(--primary);
   cursor: pointer;
   font-size: 18px;
@@ -168,10 +198,15 @@ button {
 /* navbar */
 header {
   position: fixed;
-  top: 20px;
+  z-index: 10;
+  top: 0;
+  padding: 20px 0;
   width: 100%;
+  background: var(--sky-color);
+
 }
 header nav {
+  color: var(--text);
   display: flex;
   gap: 16px;
   justify-content: end;
@@ -203,4 +238,52 @@ header nav a:hover, header nav a:focus, header nav a:active {
 /* page content */
 main {
   margin: 0 auto;
+  color: var(--text);
+}
+main > .container {
+  margin-top: 199px;
+  gap: 100px;
+  display: flex;
+  flex-direction: column;
+}
+.about .row {
+  align-items: center;
+}
+.findme p {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  gap: 15px;
+  align-items: center;
+}
+
+.findme p a {
+  flex: 1 1 25%;
+}
+.logos {
+  background: #fff;
+  padding: calc(var(--bs-gutter-x) * 0.5);
+  border-radius: var(--bs-border-radius);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+.logos a {
+  flex: 1 1 33%;
+}
+.card {
+  color: var(--hill-color);
+}
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  column-gap: 5%;
+  row-gap: 100%;
+}
+.projectsheader {
+  flex: 1 1 100%;
+}
+.projects .card {
+  flex: 0 1 47.5%;
 }

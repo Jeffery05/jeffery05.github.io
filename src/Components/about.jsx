@@ -11,9 +11,9 @@ import gmail from "./images/Gmail Logo.png";
 
 export default function About() {
     return (
-      <div className="about; container">
-        <div className="row gx-4 mb-6 mt-6">
-            <div className="col-md-6">
+      <div className="about container">
+        <div className="row gx-5 mb-6 mt-6">
+            <div className="col-md-8">
                 <h1 className="my-3"><b>Hello!</b></h1>
                 <p>My name is Jeffery Hu and I am currently a grade 12 student in the MaCS program at William Lyon
                     Mackenzie CI.
@@ -24,30 +24,26 @@ export default function About() {
                     In my spare time, I like to listen to audiobooks and watch movies/documentaries. I also love to play
                     sports, staying up to date with current events and solving real-world problems!</p>
             </div>
-            <div className="col-md-6">
-                <img src={potrait} alt="Jeffery Hu Potrait" className="rounded img-fluid"/>
-            </div>
+            <div className="col-md-4 portrait"><img src={potrait} alt="Jeffery Hu Potrait" /></div>
         </div>
 
-        <div className="row gx-4">
-            <div className="col-md-2">
-                <p><a href="https://github.com/Jeffery05" target="_blank" rel="noopener noreferrer">
+        <div className="row gx-5">
+            <div className="col-md-4 logos">
+                <a href="https://github.com/Jeffery05" target="_blank" rel="noopener noreferrer">
                         <img src={github} alt="GitHub Logo" width="100%" height="100%"
                             className="rounded img-fluid"/>
-                    </a></p>
-                <p><a href="https://devpost.com/jeffery-hu?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav"
+                    </a>
+                    <a href="https://devpost.com/jeffery-hu?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav"
                         target="_blank" rel="noopener noreferrer">
                         <img src={devpost} alt="DevPost Logo" width="100%" height="100%"
                             className="rounded img-fluid"/>
-                    </a></p>
-            </div>
-            <div className="col-md-2">
-                <p><a href="https://dmoj.ca/user/FalconX" target="_blank" rel="noopener noreferrer">
+                    </a>
+                    <a href="https://dmoj.ca/user/FalconX" target="_blank" rel="noopener noreferrer">
                         <img src={dmoj} alt="Dmoj Logo" width="100%" height="100%" className="rounded img-fluid"/>
-                    </a></p>
-                <p><a href="https://mcpt.ca/user/FalconX" target="_blank" rel="noopener noreferrer">
+                    </a>
+                    <a href="https://mcpt.ca/user/FalconX" target="_blank" rel="noopener noreferrer">
                         <img src={mcpt} alt="MCPT Logo" width="100%" height="100%" className="rounded img-fluid"/>
-                    </a></p>
+                    </a>
             </div>
             <div className="col-md-8">
                 <h3 className="my-3"><b>Passion for Coding</b></h3>
@@ -67,7 +63,7 @@ export default function About() {
             </div>
         </div>
 
-        <div className="row gx-4 mb-6 mt-6">
+        <div className="row gx-5 mb-6 mt-6">
             <div className="col-md-8">
                 <h3 className="mt-6 my-3"><b>Love of STEM</b></h3>
                 <p>In addition to computer programming, I am also very passionate about science, engineering, and
@@ -87,7 +83,7 @@ export default function About() {
             </div>
         </div>
 
-        <div className="row gx-4 mb-6 mt-6">
+        <div className="row gx-5 mb-6 mt-6">
             <div className="col-md-4">
                 <img src={soccer} alt="Jeffery Hu Soccer Team" width="100%" height="100%"
                     className="rounded img-fluid"/>
@@ -103,7 +99,7 @@ export default function About() {
             </div>
         </div>
 
-        <div className="row gx-4 mb-6 mt-6">
+        <div className="row gx-5 mb-6 mt-6">
             <div className="col-md-8">
                 <h3 className="p-6">Programming Languages</h3>
                 <p>
@@ -118,18 +114,17 @@ export default function About() {
                 </ul>
                 </p>
             </div>
-            <div className="col-md-4">
+            <div className="col-md-4 findme">
                 <h2 className="mb-2">Find Me</h2>
                 <p><a href="https://www.linkedin.com/in/jeffery-hu/" target="_blank" rel="noopener noreferrer">
-                        <img src={linkedin} alt="LinkedIn Logo" width="20%" height="20%"
+                        <img src={linkedin} alt="LinkedIn Logo" 
                             className="rounded img-fluid"/>
-                    </a><a href="Contact.html" target="_blank" rel="noopener noreferrer" className="ms-3;">
-                        <img src={gmail} alt="Gmail Logo" width="20%" height="30%"
+                    </a><a href="Contact.html" target="_blank" rel="noopener noreferrer">
+                        <img src={gmail} alt="Gmail Logo" 
                             className="rounded img-fluid"/>
                     </a>
-                    <a href="https://github.com/Jeffery05" target="_blank" rel="noopener noreferrer"
-                        className="ms-3;">
-                        <img src={github} alt="Github Logo" width="20%" height="20%"
+                    <a href="https://github.com/Jeffery05" target="_blank" rel="noopener noreferrer">
+                        <img src={github} alt="Github Logo"
                             className="rounded img-fluid"/>
                     </a>
                 </p>

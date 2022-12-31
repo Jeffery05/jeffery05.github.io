@@ -3,7 +3,8 @@ import potrait from "./images/JefferyWebPhoto.jpg"
 
 export default function Home() {
   return (
-    <div className="home">
+    <div>
+      <div className="container-fluid jumbotron jumbotron-welcome py-5">
         <div className="container">
           <row>
             <h1 className="h1-Welcome">
@@ -21,6 +22,7 @@ export default function Home() {
             </div></h3>
           </row>
         </div>
+      </div>
       <div className="row home-bg">
         <div className="col-md-8">
           <div className="m-5">
@@ -36,8 +38,7 @@ export default function Home() {
           </p>
         </div>
         </div>
-        <div className="col-md-4 portrait"><img src={potrait} alt="Jeffery Hu Potrait" /></div>
-        {/* <img className="col-md-4 img-fluid" src={potrait} alt="Jeffery Hu Potrait" /> */}
+        <img className="col-md-4 img-fluid" src={potrait} alt="Jeffery Hu Potrait" />
       </div>
     </div>
   );

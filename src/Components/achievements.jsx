@@ -8,7 +8,7 @@ import resume from "./images/Jeffery Hu_Resume.pdf";
 
 export default function Achievements() {
     return (
-         <div className="container body-content mt-3">
+         <div className="container body-content">
         <div className="row mb-1">
             <h1><b>Experience:</b></h1>
         </div>

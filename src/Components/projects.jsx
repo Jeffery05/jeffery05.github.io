@@ -9,11 +9,13 @@ import TheAdventure from "./images/The Adventure_PNG.webp";
 
 export default function Projects() {
     return (
-      <div className="container body-content mt-2 text-center">
-        <h2>Past Projects</h2>
+      <div className="container body-content text-center">
+        
+        <div className="projects">
+        <div className="projectsheader">
+        <h1>Past Projects</h1>
         <p>Feel free to look around at some of my past projects!</p>
-        <div className="row">
-            <div className="col-md-6 offset-md-3">
+        </div>
                 <div className="card rounded mb-4 shadow-sm">
                     <img className="card-img-top" alt="Tash Dash" src={TrashDash}/>
                     <div className="card-body">
@@ -30,10 +32,8 @@ export default function Projects() {
                             rel="noopener noreferrer" className="btn btn-primary bg-primary">View GitHub</a>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div className="row">
-            <div className="col-md-6 offset-md-3">
+            
+        
                 <div className="card rounded mb-4 shadow-sm">
                     <img className="card-img-top" alt="Inflector" src={Inflector}/>
                     <div className="card-body">
@@ -50,10 +50,8 @@ export default function Projects() {
                             rel="noopener noreferrer" className="btn btn-primary bg-primary">View GitHub</a>
                     </div>
                 </div>
-            </div>
-        </div>
-        <div className="row">
-            <div className="col-md-6 offset-md-3">
+            
+        
                 <div className="card rounded mb-4 shadow-sm">
                     <img className="card-img-top" alt="DECA Mackenzie Website" src={DECAWebsite}/>
                     <div className="card-body">
@@ -70,11 +68,9 @@ export default function Projects() {
                             rel="noopener noreferrer" className="btn btn-primary bg-primary">View GitHub</a>
                     </div>
                 </div>
-            </div>
-        </div>
+           
 
-        <div className="row">
-            <div className="col-md-6 offset-md-3">
+        
                 <div className="card rounded mb-4 shadow-sm">
                     <img className="card-img-top" alt="Quantum Mechanics" src={DEEP}/>
                     <div className="card-body">
@@ -91,11 +87,9 @@ export default function Projects() {
                             rel="noopener noreferrer" className="btn btn-primary bg-primary">View GitHub</a>
                     </div>
                 </div>
-            </div>
-        </div>
+           
 
-        <div className="row">
-            <div className="col-md-6 offset-md-3">
+        
                 <div className="card rounded mb-4 shadow-sm">
                     <img className="card-img-top" alt="Discord Bot" src={LyonHacks}/>
                     <div className="card-body">
@@ -110,11 +104,9 @@ export default function Projects() {
                             rel="noopener noreferrer" className="btn btn-primary bg-primary">View DevPost</a>
                     </div>
                 </div>
-            </div>
-        </div>
+          
 
-        <div className="row">
-            <div className="col-md-6 offset-md-3">
+        
                 <div className="card rounded mb-4 shadow-sm">
                     <img className="card-img-top" alt="Simon Says Homepage" src={SimonSays}/>
                     <div className="card-body">
@@ -130,11 +122,9 @@ export default function Projects() {
                             rel="noopener noreferrer" className="btn btn-primary bg-primary">View GitHub</a>
                     </div>
                 </div>
-            </div>
-        </div>
+           
 
-        <div className="row">
-            <div className="col-md-6 offset-md-3">
+        
                 <div className="card rounded mb-4 shadow-sm">
                     <img className="card-img-top" alt="The Adventure Homepage" src={TheAdventure}/>
                     <div className="card-body">
@@ -150,9 +140,7 @@ export default function Projects() {
                             rel="noopener noreferrer" className="btn btn-primary bg-primary">View GitHub</a>
                     </div>
                 </div>
-            </div>
-        </div>
-
+                </div>
         <hr/>
         <footer>
             <p>© 2022 - Jeffery Hu</p>

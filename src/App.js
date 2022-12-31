@@ -4,13 +4,14 @@ import About from "./Components/about";
 import Achievements from "./Components/achievements";
 import Projects from "./Components/projects";
 import Contact from "./Components/contact";
+import logo from "./Components/images/logo.png";
 
 function App(){
   return (
     <BrowserRouter>
     <header>
       <nav>
-        <h1>Jeffery Hu</h1>
+        <NavLink to="/"><img src={logo} alt="Logo" width="15%" height="15%"/></NavLink>
         <NavLink to="/">Home</NavLink>
         <NavLink to="about">About</NavLink>
         <NavLink to="achievements">Achievements</NavLink>
