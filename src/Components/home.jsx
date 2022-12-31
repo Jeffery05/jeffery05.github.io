@@ -25,7 +25,7 @@ export default function Home() {
         <div className="col-md-8">
           <div className="m-5">
           <h1 className="text-align: center; margin-bottom: 2%;">
-            Hi there! Welcome to my website!
+            Hi there, I'm Jeffery!
           </h1>
           <p>
             My name is Jeffery Hu and I am currently a grade 12 student in the

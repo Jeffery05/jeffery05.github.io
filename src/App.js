@@ -4,7 +4,7 @@ import About from "./Components/about";
 import Achievements from "./Components/achievements";
 import Projects from "./Components/projects";
 import Contact from "./Components/contact";
-import logo from "./Components/images/logo.png";
+import logo from "./Components/images/Jeffery Logo.svg";
 
 function App(){
   return (
