@@ -15,6 +15,7 @@ function App(){
         <NavLink to="about">About</NavLink>
         <NavLink to="achievements">Achievements</NavLink>
         <NavLink to="projects">Projects</NavLink>
+        <a href="https://jefferyhu2005.wixsite.com/portfolio" target="_blank">Java Tutorials</a>
         <NavLink to="contact">Contact</NavLink>
       </nav>
     </header>
