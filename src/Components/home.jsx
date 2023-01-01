@@ -4,6 +4,9 @@ import potrait from "./images/JefferyWebPhoto.jpg"
 export default function Home() {
   return (
     <div className="home">
+      <head>
+      <link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/><link href="https://fonts.googleapis.com/css2?family=Cabin&family=Questrial&display=swap" rel="stylesheet"/>
+      </head>
         <div className="container">
           <row>
             <h1 className="h1-Welcome">
@@ -28,11 +31,10 @@ export default function Home() {
             Hi there, I'm Jeffery!
           </h1>
           <p>
-            My name is Jeffery Hu and I am currently a grade 12 student in the
-            MaCS program (Math and Computer Science program) at William Lyon
-            Mackenzie CI. Feel free to take a look around my website that I
-            built using HTML, CSS, and JavaScript! It features some of my past
-            coding projects, achievements, and a little bit more about myself.
+            I am currently a grade 12 student in the
+            MaCS program (Math and Computer, Science program) at William Lyon
+            Mackenzie CI. Feel free to explore around my website that I
+            built using React.js and HTML/CSS! It features more about myself, my achievements, and my past coding projects.
           </p>
         </div>
         </div>
