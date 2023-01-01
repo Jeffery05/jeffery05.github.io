@@ -11,11 +11,15 @@
 
 h1.h1-Welcome{
   text-align:center;
-  font-size:100px; 
+  font-size:120px; 
   color: var(--accent-text); 
   font-family: verdana; 
   /* margin-top: 15% */
   /* transform: translateY(15%); */
+}
+
+h3.h1-Welcome{
+  font-size: 120px !important;
 }
 
 .home-bg h1 {
@@ -92,7 +96,7 @@ row {
   color: var(--secondary);
 }
 .slider {
-  height: 30px;
+  height: 28px;
   padding-left: 10px;
   overflow: hidden;
   display: inline-block;
@@ -106,24 +110,24 @@ row {
 }
 
 .slider-t1 {
-  color: #134f5c;
+  color: #94652a;
   animation: slide 7s linear infinite;
 }
 
 .slider-t2 {
-  color: #446fa7;
+  color: #1a2889;
 }
 
 .slider-t3 {
-  color: #1e89a1;
+  color: #460898;
 }
 
 .slider-t4 {
-  color: #2a4c94;
+  color: #126f4d;
 }
 
 .slider-t5 {
-  color: #26aa68;
+  color: #6e1414;
 }
 
 @keyframes slide {

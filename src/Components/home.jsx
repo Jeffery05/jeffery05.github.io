@@ -14,14 +14,14 @@ export default function Home() {
             </h1>
           </row>
           <row>
-            <h3>I am a 
+            <h3><b>I am a 
             <div className="slider">
-              <div className="slider-t1">Leader</div>
+              <div className="slider-t1">Risk-Taker</div>
               <div className="slider-t2">Problem Solver</div>
-              <div className="slider-t2">Lifelong Learner</div>
-              <div className="slider-t2">Risktaker</div>
-              <div className="slider-t2">Teammate</div>
-            </div></h3>
+              <div className="slider-t3">Innovator</div>
+              <div className="slider-t4">Teammate</div>
+              <div className="slider-t5">Leader</div> 
+            </div></b></h3>
           </row>
         </div>
       <div className="row home-bg">
