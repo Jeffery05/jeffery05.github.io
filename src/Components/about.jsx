@@ -35,14 +35,13 @@ export default function About() {
             <b>Hello!</b>
           </h1>
           <p>
-            I'm Jeffery, a grade 12 student in the MaCS program at William Lyon
-            Mackenzie CI. My interests include programming, engineering,
-            business, math, and science. In the future, I would like to use my
+            I'm Jeffery, a grade 12 student at William Lyon
+            Mackenzie CI. I have a strong interest in software development, engineering,
+            technology and business. In the future, I would like to use my
             technical knowledge in STEM and my practical understanding of
             business to solve pressing real-world issues and make a positive
             impact on the world! I love to innovate and learn new things,
-            whether that's through developing a web application for an issue I
-            care deeply about or leading a middle school science olympiad. Have
+            whether that's through developing impactful web application or leading a middle school science olympiad. Have
             a closer look at my passions and goals below!
           </p>
         </div>
@@ -62,7 +61,7 @@ export default function About() {
             className="rounded img-fluid"
           />
           <h3>Software Development</h3>
-          <p></p>
+          <p>I love the creative nature of building software applications - there's no limits to what you can build!</p>
         </div>
         <div className="col-md-4 logos">
           <img
@@ -73,6 +72,7 @@ export default function About() {
             className="rounded img-fluid"
           />
           <h3>Engineering</h3>
+          <p>I am intrigued by the applied nature of engineering and how it uses technology and critical thinking to solve large problems.</p>
         </div>
         <div className="col-md-4 logos">
           <img
@@ -83,6 +83,7 @@ export default function About() {
             className="rounded img-fluid"
           />
           <h3>Business</h3>
+          <p>Whether I persue a start-up or work within a large corporation, business knowledge will help me excel in future managerial positions.</p>
         </div>
       </div>
 
@@ -99,7 +100,7 @@ export default function About() {
             className="rounded img-fluid"
           />
           <h3>Hackathons</h3>
-          <p></p>
+          <p>I would like to attend even more hackathons in the future so I can continue to innovate and build impactful projects!</p>
         </div>
         <div className="col-md-4 logos">
           <img
@@ -110,16 +111,18 @@ export default function About() {
             className="rounded img-fluid"
           />
           <h3>Machine Learning</h3>
+          <p>I would like to take a deeper dive into machine learning - an emerging technology that can revolutionize the way we work, travel, and live.</p>
         </div>
         <div className="col-md-4 logos">
           <img
             src={mandarin}
             alt="Software Development"
-            width="100%"
+            width="100%"s
             height="100%"
             className="rounded img-fluid"
           />
           <h3>Mandarin</h3>
+          <p>I would like to learn more mandarin to speak to my family and friends!</p>
         </div>
       </div>
 
@@ -136,7 +139,7 @@ export default function About() {
             className="rounded img-fluid"
           />
           <h3>Sports</h3>
-          <p></p>
+          <p>I love to exercise and play sports, including soccer, badminton, and ultimate frisbee.</p>
         </div>
         <div className="col-md-4 logos">
           <img
@@ -147,6 +150,7 @@ export default function About() {
             className="rounded img-fluid"
           />
           <h3>Community</h3>
+          <p>In my spare time, I like to volunteer in the community by organizing events, working with children, and helping local museums.</p>
         </div>
         <div className="col-md-4 logos">
           <img
@@ -157,6 +161,7 @@ export default function About() {
             className="rounded img-fluid"
           />
           <h3>Travel</h3>
+          <p>I enjoy exploring new places and experiencing new cultures!</p>
         </div>
       </div>
 
