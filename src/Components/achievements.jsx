@@ -186,10 +186,11 @@ export default function Achievements() {
         <h1>
           <b>Resume</b>
         </h1>
-        <iframe src={resume} width="100%" height="500px"></iframe>
+        <iframe src={resume} width="100%" height="1000px"></iframe>
       </div>
+      <hr />
       <footer>
-        <p>© 2022 - Jeffery Hu</p>
+        <p>© 2023 - Jeffery Hu</p>
       </footer>
     </div>
   );

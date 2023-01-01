@@ -28,13 +28,12 @@ export default function Home() {
         <div className="col-md-8">
           <div className="m-5">
           <h1 className="text-align: center; margin-bottom: 2%;">
-            Hi there, I'm Jeffery!
+            Hello, I'm Jeffery!
           </h1>
           <p>
             I am currently a grade 12 student in the
             MaCS program (Math and Computer, Science program) at William Lyon
-            Mackenzie CI. Feel free to explore around my website that I
-            built using React.js and HTML/CSS! It features more about myself, my achievements, and my past coding projects.
+            Mackenzie CI. Feel free to explore around my website! (I built it myself using React.js and HTML/CSS!) It features more about myself, my achievements, and my past coding projects.
           </p>
         </div>
         </div>

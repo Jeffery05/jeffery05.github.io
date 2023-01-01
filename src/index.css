@@ -280,6 +280,7 @@ main > .container {
   color:  var(--secondary);
   padding: 50px;
 }
+
 .findme p {
   display: flex;
   width: 100%;
@@ -292,7 +293,6 @@ main > .container {
   flex: 1 1 25%;
 }
 .logos {
-  background: #fff;
   padding: calc(var(--bs-gutter-x) * 0.5);
   border-radius: var(--bs-border-radius);
   display: flex;

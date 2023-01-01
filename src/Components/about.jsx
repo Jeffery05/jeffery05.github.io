@@ -8,6 +8,15 @@ import sciencefair from "./images/Jeffery Science Fair.jpg";
 import soccer from "./images/Jeffery_Soccer.jpg";
 import linkedin from "./images/LinkedIn.png";
 import gmail from "./images/Gmail Logo.png";
+import softwareDev from "./images/Software Development.svg";
+import engineering from "./images/Engineering.svg";
+import business from "./images/Business.svg";
+import sports from "./images/Sports.svg";
+import community from "./images/Community.svg";
+import travel from "./images/Travel.svg";
+import hackathons from "./images/Hackathons.svg";
+import machineLearning from "./images/Machine Learning.svg";
+import mandarin from "./images/Mandarin.svg";
 
 export default function About() {
   return (
@@ -26,7 +35,15 @@ export default function About() {
             <b>Hello!</b>
           </h1>
           <p>
-          I'm Jeffery, a grade 12 student in the MaCS program at William Lyon Mackenzie CI. My interests include programming, engineering, business, math, and science. In the future, I would like to use my technical knowledge in STEM and my practical understanding of business to solve pressing real-world issues and make a positive impact on the world! I love to innovate and learn new things, whether that's through developing a web application for an issue I care deeply about or leading a middle school science olympiad. Have a closer look at my passions and goals below!
+            I'm Jeffery, a grade 12 student in the MaCS program at William Lyon
+            Mackenzie CI. My interests include programming, engineering,
+            business, math, and science. In the future, I would like to use my
+            technical knowledge in STEM and my practical understanding of
+            business to solve pressing real-world issues and make a positive
+            impact on the world! I love to innovate and learn new things,
+            whether that's through developing a web application for an issue I
+            care deeply about or leading a middle school science olympiad. Have
+            a closer look at my passions and goals below!
           </p>
         </div>
         <div className="col-md-4 portrait">
@@ -35,147 +52,111 @@ export default function About() {
       </div>
 
       <div className="row gx-5">
+        <h1> Passions</h1>
         <div className="col-md-4 logos">
-          <a
-            href="https://github.com/Jeffery05"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src={github}
-              alt="GitHub Logo"
-              width="100%"
-              height="100%"
-              className="rounded img-fluid"
-            />
-          </a>
-          <a
-            href="https://devpost.com/jeffery-hu?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src={devpost}
-              alt="DevPost Logo"
-              width="100%"
-              height="100%"
-              className="rounded img-fluid"
-            />
-          </a>
-          <a
-            href="https://dmoj.ca/user/FalconX"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src={dmoj}
-              alt="Dmoj Logo"
-              width="100%"
-              height="100%"
-              className="rounded img-fluid"
-            />
-          </a>
-          <a
-            href="https://mcpt.ca/user/FalconX"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src={mcpt}
-              alt="MCPT Logo"
-              width="100%"
-              height="100%"
-              className="rounded img-fluid"
-            />
-          </a>
-        </div>
-        <div className="col-md-8">
-          <h3 className="my-3">
-            <b>Passion for Coding</b>
-          </h3>
-          <p>
-            Ever since grade 6, I have been passionate about coding. I remember
-            learning my first programming language, JavaScript, through watching
-            countless Khan Academy videos on if/else statements, loops,
-            functions, and much more. It amazes me how much you can do with a
-            few lines of code. Since then, I have remained passionate and active
-            in computer programming. In high school, I enrolled in a specialized
-            math, science, and computer science program called MaCS. As a part
-            of the MaCS program, I was able to take extra enriched computer
-            science courses. Outside of school, I have stayed involved in
-            computer programming by attending many competitive coding
-            competitions, being an active member of my school’s computer
-            programming team, and working on personal projects (like this one!).
-            I am especially excited about the applications of coding, and how it
-            can be applied in different fields such as business, finance, and
-            engineering. In the future, I plan to take part in more hackathons
-            and keep working on personal projects that I am passionate about
-            (e.g. right now I am working on an application to help my parents
-            keep track of their stock investments and their performance
-            statistics!).
-          </p>
-        </div>
-      </div>
-
-      <div className="row gx-5 mb-6 mt-6">
-        <div className="col-md-8">
-          <h3 className="mt-6 my-3">
-            <b>Love of STEM</b>
-          </h3>
-          <p>
-            In addition to computer programming, I am also very passionate about
-            science, engineering, and mathematics. I especially enjoy how these
-            subjects can help explain everything that’s happening around me,
-            from gravity to micro-bacteria. I particularly enjoy engineering, as
-            it takes science concepts and applies them for everyday use. In
-            addition to studying and taking enriched courses in these fields, I
-            also try to give back to the community by getting involved in school
-            clubs. As the President of Mackenzie Science Club, I help coordinate
-            and lead weekly STEM-based events for over 200 members. During the
-            spring, we also hold the Mackenzie Science and Engineering Olympics,
-            which draws over 700 middle school students from across Ontario.
-            Overall, taking part in Mackenzie Science Club has allowed me to
-            express my passion for STEM while also giving back and getting the
-            next generation engaged!
-          </p>
-        </div>
-        <div className="col-md-4 mb-3">
           <img
-            src={sciencefair}
-            alt="Jeffery Hu Science Fair"
+            src={softwareDev}
+            alt="Software Development"
             width="100%"
             height="100%"
             className="rounded img-fluid"
           />
+          <h3>Software Development</h3>
+          <p></p>
         </div>
-      </div>
-
-      <div className="row gx-5 mb-6 mt-6">
-        <div className="col-md-4">
+        <div className="col-md-4 logos">
           <img
-            src={soccer}
-            alt="Jeffery Hu Soccer Team"
+            src={engineering}
+            alt="Software Development"
             width="100%"
             height="100%"
             className="rounded img-fluid"
           />
+          <h3>Engineering</h3>
         </div>
-        <div className="col-md-8 ml-3">
-          <h3 className="p-8 mt-6 my-3">
-            <b>Interest in Other Extra-Curriculars</b>
-          </h3>
-          <p>
-            I am also very intrigued by finance and economics. Recently, I have
-            become very interested in using coding to help track business
-            growth. As a member and now Co-President of my school’s DECA chapter
-            (a business club), I have been able to soak up a lot of business
-            knowledge that I want to use with my other skills to solve
-            real-world problems. Finally, in my free time, I love to get outside
-            with friends and play sports. My favourites include soccer,
-            badminton, and ultimate frisbee. I always enjoy the teamwork and
-            collaboration involved in these activities and the friendships they
-            help to foster!
-          </p>
+        <div className="col-md-4 logos">
+          <img
+            src={business}
+            alt="Software Development"
+            width="100%"
+            height="100%"
+            className="rounded img-fluid"
+          />
+          <h3>Business</h3>
+        </div>
+      </div>
+
+      <div className="row gx-5 mb-6 mt-6">
+        <h1 className="mt-6 my-3">
+          <b>Current Goals</b>
+        </h1>
+        <div className="col-md-4 logos">
+          <img
+            src={hackathons}
+            alt="Software Development"
+            width="100%"
+            height="100%"
+            className="rounded img-fluid"
+          />
+          <h3>Hackathons</h3>
+          <p></p>
+        </div>
+        <div className="col-md-4 logos">
+          <img
+            src={machineLearning}
+            alt="Software Development"
+            width="100%"
+            height="100%"
+            className="rounded img-fluid"
+          />
+          <h3>Machine Learning</h3>
+        </div>
+        <div className="col-md-4 logos">
+          <img
+            src={mandarin}
+            alt="Software Development"
+            width="100%"
+            height="100%"
+            className="rounded img-fluid"
+          />
+          <h3>Mandarin</h3>
+        </div>
+      </div>
+
+      <div className="row gx-5 mb-6 mt-6">
+        <h1 className="mt-6 my-3">
+          <b>Other Interests</b>
+        </h1>
+        <div className="col-md-4 logos">
+          <img
+            src={sports}
+            alt="Software Development"
+            width="100%"
+            height="100%"
+            className="rounded img-fluid"
+          />
+          <h3>Sports</h3>
+          <p></p>
+        </div>
+        <div className="col-md-4 logos">
+          <img
+            src={community}
+            alt="Software Development"
+            width="100%"
+            height="100%"
+            className="rounded img-fluid"
+          />
+          <h3>Community</h3>
+        </div>
+        <div className="col-md-4 logos">
+          <img
+            src={travel}
+            alt="Software Development"
+            width="100%"
+            height="100%"
+            className="rounded img-fluid"
+          />
+          <h3>Travel</h3>
         </div>
       </div>
 
@@ -227,8 +208,60 @@ export default function About() {
       </div>
       <hr />
       <footer>
-        <p>© 2022 - Jeffery Hu</p>
+        <p>© 2023 - Jeffery Hu</p>
       </footer>
     </div>
   );
 }
+/*<a
+            href="https://github.com/Jeffery05"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={github}
+              alt="GitHub Logo"
+              width="100%"
+              height="100%"
+              className="rounded img-fluid"
+            />
+          </a>
+          <a
+            href="https://devpost.com/jeffery-hu?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={devpost}
+              alt="DevPost Logo"
+              width="100%"
+              height="100%"
+              className="rounded img-fluid"
+            />
+          </a>
+          <a
+            href="https://dmoj.ca/user/FalconX"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={dmoj}
+              alt="Dmoj Logo"
+              width="100%"
+              height="100%"
+              className="rounded img-fluid"
+            />
+          </a>
+          <a
+            href="https://mcpt.ca/user/FalconX"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={mcpt}
+              alt="MCPT Logo"
+              width="100%"
+              height="100%"
+              className="rounded img-fluid"
+            />
+          </a>*/

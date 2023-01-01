@@ -11,7 +11,7 @@ export default function Contact() {
           rel="stylesheet"
         />
       </head>
-      <h1 className="mb-3 ps-4">Contact Me!</h1>
+      <h1 className="mb-3">Contact Me!</h1>
 
       <form
         className="needs-validation"
@@ -107,6 +107,10 @@ export default function Contact() {
         <button type="submit" className="btn btn-primary mt-3" id="sendMessage">
           Submit
         </button>
+        <hr />
+        <footer>
+          <p>© 2023 - Jeffery Hu</p>
+        </footer>
         <input
           type="hidden"
           name="_next"

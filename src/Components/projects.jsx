@@ -210,7 +210,7 @@ export default function Projects() {
       </div>
       <hr />
       <footer>
-        <p>© 2022 - Jeffery Hu</p>
+        <p>© 2023 - Jeffery Hu</p>
       </footer>
     </div>
   );
