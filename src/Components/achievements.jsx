@@ -8,7 +8,7 @@ import resume from "./images/Jeffery Hu_Resume.pdf";
 
 export default function Achievements() {
   return (
-    <div className="container body-content">
+    <div className="container body-content achieve">
       <head>
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,9 +17,9 @@ export default function Achievements() {
           rel="stylesheet"
         />
       </head>
-      <div className="row mb-1">
+      <div className="row">
         <h1>
-          <b>Experience:</b>
+          <b><u>Experience:</u></b>
         </h1>
       </div>
       <div className="row gx-4 mb-3">
@@ -40,7 +40,7 @@ export default function Achievements() {
         </div>
         <div className="col-md-9">
           <p>
-            <b>President - Mackenzie Science Club</b>
+            <h3><b>President - Mackenzie Science Club</b></h3>
           </p>
           <p>June 2022-June 2023</p>
           <hr />
@@ -61,7 +61,7 @@ export default function Achievements() {
       </div>
       <div className="row gx-4 mb-3">
         <div className="col-md-3 ps-3">
-          <a href="decamackenzie.ca" target="_blank" rel="noopener noreferrer">
+          <a href="https://decamackenzie.ca/" target="_blank" rel="noopener noreferrer">
             <img
               src={decaLogo}
               alt="DECA Mackenzie Logo"
@@ -72,9 +72,9 @@ export default function Achievements() {
           </a>
         </div>
         <div className="col-md-9">
-          <p>
+          <h3>
             <b>President - DECA Mackenzie</b>
-          </p>
+          </h3>
           <p>June 2022-June 2023</p>
           <hr />
           <ul>
@@ -107,24 +107,27 @@ export default function Achievements() {
           />
         </div>
         <div className="col-md-9">
-          <p>
+          <h3>
             <b>Assistant Teacher - Spirit of Math Schools</b>
-          </p>
+          </h3>
           <p>September 2019-June 2023</p>
           <hr />
           <ul>
             <li>
-              Lead discussions and engage with students to teach them advanced
-              math concepts during weekly Spirit of Math classes.
+              Tutor and mentor 20+ middle school students to teach them advanced
+              math concepts.
             </li>
-            <li>Complete administrative tasks such as calling parents. </li>
+            <li>
+              Lead class discussions and engage with students during group work time.
+            </li>
+            <li>Complete administrative tasks such as calling parents and inputting marks. </li>
           </ul>
         </div>
       </div>
 
       <div className="row gx-4 mb-3">
         <div className="col-md-3 ps-3">
-          <a href="maclyonsden.com" target="_blank" rel="noopener noreferrer">
+          <a href="https://maclyonsden.com/" target="_blank" rel="noopener noreferrer">
             <img
               src={metro}
               alt="Mac Lyons Den Logo"
@@ -135,9 +138,9 @@ export default function Achievements() {
           </a>
         </div>
         <div className="col-md-9">
-          <p>
+          <h3>
             <b>Front-End Developer - Project Metropolis</b>
-          </p>
+          </h3>
           <p>August 2022-June 2023</p>
           <hr />
           <ul>
@@ -147,6 +150,9 @@ export default function Achievements() {
             <li>
               Created the user interface for club executives to submit
               announcements.
+            </li>
+            <li>
+              Gained experience using React.js
             </li>
           </ul>
         </div>
@@ -163,9 +169,9 @@ export default function Achievements() {
           />
         </div>
         <div className="col-md-9">
-          <p>
+          <h3>
             <b>Executive - Mackenzie Model UN</b>
-          </p>
+          </h3>
           <p>June 2022-June 2023</p>
           <hr />
           <ul>
@@ -177,6 +183,9 @@ export default function Achievements() {
               Develop and teach lessons about international relations related to
               the competition.
             </li>
+            <li>
+              Previously served as a member for 2 years.
+            </li>
           </ul>
         </div>
       </div>
@@ -184,7 +193,7 @@ export default function Achievements() {
 
       <div className="row mb-1">
         <h1>
-          <b>Resume</b>
+          <b><u>Resume:</u></b>
         </h1>
         <iframe src={resume} width="100%" height="1000px"></iframe>
       </div>

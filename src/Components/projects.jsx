@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import TrashDash from "./images/TrashDash.png";
+import TrashDash from "./images/TrashDash2.png";
 import Inflector from "./images/Inflector.png";
 import DECAWebsite from "./images/DECAWebsite.png";
 import DEEP from "./images/DEEP Computational Physics Challenge Presentation.png";
@@ -20,28 +20,39 @@ export default function Projects() {
       </head>
       <div className="projects">
         <div className="projectsheader">
-          <h1>Past Projects</h1>
+          <h1><b>Past Projects</b></h1>
           <p>Feel free to look around at some of my past projects!</p>
         </div>
         <div className="card rounded mb-4 shadow-sm">
           <img className="card-img-top" alt="Tash Dash" src={TrashDash} />
           <div className="card-body">
-            <h5 className="card-title">Tash Dash</h5>
+            <h3 className="card-title"><b>trashdash</b></h3>
             <p className="card-text text-left">
-              In this project, I worked with 3 other group members to solve the
-              particle in a box problem computationally as part of University of
-              Toronto's DEEP Computational Physics Challenge. In this problem,
-              we used Schrödinger's equation and Python to graph the probability
-              of a particle being in different areas of a box (assuming v=0 is
-              inside the box and V = ∞ is outside).
+            To deal with the problem of litter, this web application encourages citizen led environmental cleanups! It does this by introducing a centralized litter database, where citizens can post about areas with high levels of trash so it can be cleaned up during community pickup days! As an extra incentive, users gain points whenever they report/resolve litter piles, which can be exchanged for donations to a charity of their choice!.
             </p>
           </div>
           <div className="card-footer">
-            <a
-              href="https://github.com/Jeffery05/Solving-Quantum-Mechanics-Using-Python"
+          <a
+              href="https://trash-dash-htv.herokuapp.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-primary bg-primary"
+            >
+              View Website
+            </a>
+            <a
+              href="https://devpost.com/software/trashdash"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary bg-primary ms-3"
+            >
+              Devpost
+            </a>
+            <a
+              href="https://github.com/Jeffery05/Hack-The-Valley"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary bg-primary ms-3"
             >
               View GitHub
             </a>
@@ -51,22 +62,33 @@ export default function Projects() {
         <div className="card rounded mb-4 shadow-sm">
           <img className="card-img-top" alt="Inflector" src={Inflector} />
           <div className="card-body">
-            <h5 className="card-title">Inflector</h5>
+            <h3 className="card-title"><b>Inflector</b></h3>
             <p className="card-text text-left">
-              In this project, I worked with 3 other group members to solve the
-              particle in a box problem computationally as part of University of
-              Toronto's DEEP Computational Physics Challenge. In this problem,
-              we used Schrödinger's equation and Python to graph the probability
-              of a particle being in different areas of a box (assuming v=0 is
-              inside the box and V = ∞ is outside).
+            Calculate the effects of inflation on your life using this simple tool. Using inflation rates updated in real time, find out how much your current spending habits would cost you every month for the next year. <br/><b>Note: Overall winner for Ignition Hacks 2022!</b>
             </p>
           </div>
           <div className="card-footer">
-            <a
-              href="https://github.com/Jeffery05/Solving-Quantum-Mechanics-Using-Python"
+          <a
+              href="https://www.inflector.tech/"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-primary bg-primary"
+            >
+              View Website
+            </a>
+            <a
+              href="https://devpost.com/software/inflector-the-inflation-projector"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary bg-primary ms-3"
+            >
+              Devpost
+            </a>
+            <a
+              href="https://github.com/Jeffery05/New-Ignition-Hacks"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary bg-primary ms-3"
             >
               View GitHub
             </a>
@@ -80,22 +102,25 @@ export default function Projects() {
             src={DECAWebsite}
           />
           <div className="card-body">
-            <h5 className="card-title">DECA Mackenzie Website</h5>
+            <h3 className="card-title"><b>DECA Mackenzie Website</b></h3>
             <p className="card-text text-left">
-              In this project, I worked with 3 other group members to solve the
-              particle in a box problem computationally as part of University of
-              Toronto's DEEP Computational Physics Challenge. In this problem,
-              we used Schrödinger's equation and Python to graph the probability
-              of a particle being in different areas of a box (assuming v=0 is
-              inside the box and V = ∞ is outside).
+              The official website for William Lyon Mackenzie CI's DECA chapter built using HTML, CSS, Javascript, and Boostrap. It features more about the club including photos, announcements, and more!
             </p>
           </div>
           <div className="card-footer">
-            <a
-              href="https://github.com/Jeffery05/Solving-Quantum-Mechanics-Using-Python"
+          <a
+              href="https://decamackenzie.ca/"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-primary bg-primary"
+            >
+              View Website
+            </a>
+            <a
+              href="https://github.com/Jeffery05/DECA-Website"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary bg-primary ms-3"
             >
               View GitHub
             </a>
@@ -105,9 +130,9 @@ export default function Projects() {
         <div className="card rounded mb-4 shadow-sm">
           <img className="card-img-top" alt="Quantum Mechanics" src={DEEP} />
           <div className="card-body">
-            <h5 className="card-title">
-              Solving the Particle in a Box Challenge Computationally
-            </h5>
+            <h3 className="card-title"><b>
+              Solving Quantum Mechanics Using Python 
+              </b></h3>
             <p className="card-text text-left">
               In this project, I worked with 3 other group members to solve the
               particle in a box problem computationally as part of University of
@@ -132,9 +157,9 @@ export default function Projects() {
         <div className="card rounded mb-4 shadow-sm">
           <img className="card-img-top" alt="Discord Bot" src={LyonHacks} />
           <div className="card-body">
-            <h5 className="card-title">
-              LyonHacks2: Greg The Teaching Assistant
-            </h5>
+            <h3 className="card-title">
+            <b>LyonHacks2: Greg The Teaching Assistant</b>
+            </h3>
             <p className="card-text text-left">
               This program creates a discord bot that will assist the teacher
               with their morning routine. This includes taking attendance,
@@ -160,7 +185,7 @@ export default function Projects() {
             src={SimonSays}
           />
           <div className="card-body">
-            <h5 className="card-title">Simon Says</h5>
+            <h3 className="card-title"><b>Simon Says</b></h3>
             <p className="card-text text-left">
               This program is intended to simulate playing virtual Simon Says.
               Simon Says starts off with the program flashing a series of
@@ -188,7 +213,7 @@ export default function Projects() {
             src={TheAdventure}
           />
           <div className="card-body">
-            <h5 className="card-title">The Adventure</h5>
+            <h3 className="card-title"><b>The Adventure</b></h3>
             <p className="card-text text-left">
               <b>Synopsis:</b> The fly twins and their friend, Anty, went on a
               stroll one day when they found a shiny peach! As they try to get a
