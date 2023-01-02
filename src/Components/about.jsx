@@ -21,14 +21,6 @@ import mandarin from "./images/Mandarin.svg";
 export default function About() {
   return (
     <div className="about container">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Cabin&family=Questrial&display=swap"
-          rel="stylesheet"
-        />
-      </head>
       <div className="row gx-5 about-hello">
         <div className="col-md-8">
           <h1 className="my-3">
@@ -71,7 +63,7 @@ export default function About() {
           <div className="abt-icon">
           <img
             src={engineering}
-            alt="Software Development"
+            alt="Engineering"
            
             className=" img-fluid"
           /></div>
@@ -85,7 +77,7 @@ export default function About() {
           <div className="abt-icon">
           <img
             src={business}
-            alt="Software Development"
+            alt="Business"
            
             className=" img-fluid"
           /></div>
@@ -106,7 +98,7 @@ export default function About() {
           <div className="abt-icon">
           <img
             src={hackathons}
-            alt="Software Development"
+            alt="Hackathons"
            
             className=" img-fluid"
           /></div>
@@ -120,7 +112,7 @@ export default function About() {
           <div className="abt-icon">
           <img
             src={machineLearning}
-            alt="Software Development"
+            alt="Machine Learning"
            
             className=" img-fluid"
           /></div>
@@ -135,7 +127,7 @@ export default function About() {
           <div className="abt-icon">
           <img
             src={mandarin}
-            alt="Software Development"
+            alt="Mandarin"
 
             className=" img-fluid"
           /></div>
@@ -155,7 +147,7 @@ export default function About() {
           <div className="abt-icon">
           <img
             src={sports}
-            alt="Software Development"
+            alt="Sports"
            
             className=" img-fluid"
           /></div>
@@ -169,7 +161,7 @@ export default function About() {
           <div className="abt-icon">
           <img
             src={community}
-            alt="Software Development"
+            alt="Community"
            
             className=" img-fluid"
           /></div>
@@ -183,7 +175,7 @@ export default function About() {
           <div className="abt-icon">
           <img
             src={travel}
-            alt="Software Development"
+            alt="Travel"
             className=" img-fluid"
           /></div>
           <h3>Travel</h3>
@@ -193,21 +185,19 @@ export default function About() {
 
       <div className="row gx-5 mb-6 mt-6">
         <div className="col-md-6">
-          <h3 className="p-6">Programming Languages</h3>
+          <h3 className="p-6"><b>Programming Languages:</b></h3>
           <p>
             <ul>
               <li>Java</li>
-
-              <li>JavaScript</li>
-
-              <li>Processing</li>
+              <li>JavaScript & React</li>
               <li>HTML/CSS</li>
-              <li>C++</li>
+              <li>Python & Flask</li>
+              <li>SQLite</li>
             </ul>
           </p>
         </div>
         <div className="col-md-6 findme">
-          <h2 className="mb-2">Find Me</h2>
+          <h3 className="mb-2"><b>Find Me:</b></h3>
           <p>
             <a
               href="https://www.linkedin.com/in/jeffery-hu/"

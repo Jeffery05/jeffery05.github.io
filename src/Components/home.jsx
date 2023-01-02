@@ -4,9 +4,6 @@ import potrait from "./images/JefferyWebPhoto.jpg"
 export default function Home() {
   return (
     <div className="home">
-      <head>
-      <link rel="preconnect" href="https://fonts.googleapis.com"/><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/><link href="https://fonts.googleapis.com/css2?family=Cabin&family=Questrial&display=swap" rel="stylesheet"/>
-      </head>
         <div className="container">
           <row>
             <h1 className="h1-Welcome">

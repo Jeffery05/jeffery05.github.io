@@ -9,17 +9,9 @@ import resume from "./images/Jeffery Hu_Resume.pdf";
 export default function Achievements() {
   return (
     <div className="container body-content achieve">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Cabin&family=Questrial&display=swap"
-          rel="stylesheet"
-        />
-      </head>
       <div className="row">
         <h1>
-          <b><u>Experience:</u></b>
+          <b>Experience:</b>
         </h1>
       </div>
       <div className="row gx-4 mb-3">
@@ -36,9 +28,7 @@ export default function Achievements() {
           </a>
         </div>
         <div className="col-md-9">
-          <p>
             <h3><b>President - Mackenzie Science Club</b></h3>
-          </p>
           <p>June 2022-June 2023</p>
           <hr />
           <ul>
@@ -178,7 +168,7 @@ export default function Achievements() {
 
       <div className="row mb-1">
         <h1>
-          <b><u>Resume:</u></b>
+          <b>Resume:</b>
         </h1>
         <iframe src={resume} width="100%" height="1000px"></iframe>
       </div>

@@ -10,14 +10,6 @@ import TheAdventure from "./images/The Adventure_PNG.webp";
 export default function Projects() {
   return (
     <div className="container body-content text-center">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Cabin&family=Questrial&display=swap"
-          rel="stylesheet"
-        />
-      </head>
       <div className="projects">
         <div className="projectsheader">
           <h1><b>Past Projects</b></h1>

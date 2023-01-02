@@ -2,16 +2,8 @@ import React, { Component } from "react";
 
 export default function Contact() {
   return (
-    <div className="container contact">
-      <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-          href="https://fonts.googleapis.com/css2?family=Cabin&family=Questrial&display=swap"
-          rel="stylesheet"
-        />
-      </head>
-      <h1 className="mb-3">Contact Me!</h1>
+    <div className="container body-content contact">
+      <h1 className="mb-3 text-center"><b>Contact Me!</b></h1>
 
       <form
         className="needs-validation"
@@ -30,7 +22,6 @@ export default function Contact() {
               className="form-control"
               id="firstName"
               placeholder="First Name"
-              value=""
               required
             />
             <div className="invalid-feedback">
@@ -47,7 +38,6 @@ export default function Contact() {
               className="form-control"
               id="firstName"
               placeholder="Last Name"
-              value=""
               required
             />
             <div className="invalid-feedback">Valid last name is required.</div>
