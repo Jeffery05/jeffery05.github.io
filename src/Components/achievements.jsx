@@ -31,10 +31,7 @@ export default function Achievements() {
           >
             <img
               src={mscLogo}
-              alt="Mackenzie Science Club Logo"
-              width="80%"
-              height="80%"
-              className="rounded img-fluid"
+              alt="Mackenzie Science Club Logo"width="100%" height="1000px"     className="rounded img-fluid"
             />
           </a>
         </div>
@@ -64,10 +61,7 @@ export default function Achievements() {
           <a href="https://decamackenzie.ca/" target="_blank" rel="noopener noreferrer">
             <img
               src={decaLogo}
-              alt="DECA Mackenzie Logo"
-              width="100%"
-              height="100%"
-              className="rounded img-fluid"
+              alt="DECA Mackenzie Logo"width="100%" height="1000px"     className="rounded img-fluid"
             />
           </a>
         </div>
@@ -100,10 +94,7 @@ export default function Achievements() {
         <div className="col-md-3 ps-3">
           <img
             src={SMS}
-            alt="Spirit of Math Logo"
-            width="100%"
-            height="100%"
-            className="rounded img-fluid"
+            alt="Spirit of Math Logo"width="100%" height="1000px"   className="rounded img-fluid"
           />
         </div>
         <div className="col-md-9">
@@ -130,10 +121,7 @@ export default function Achievements() {
           <a href="https://maclyonsden.com/" target="_blank" rel="noopener noreferrer">
             <img
               src={metro}
-              alt="Mac Lyons Den Logo"
-              width="70%"
-              height="70%"
-              className="rounded img-fluid"
+              alt="Mac Lyons Den Logo"width="100%" height="1000px"     className="rounded img-fluid"
             />
           </a>
         </div>
@@ -145,7 +133,7 @@ export default function Achievements() {
           <hr />
           <ul>
             <li>
-              Collaborate with other developers to build the school website.
+              Collaborate with other developers to build the official school website.
             </li>
             <li>
               Created the user interface for club executives to submit
@@ -162,10 +150,7 @@ export default function Achievements() {
         <div className="col-md-3 ps-3">
           <img
             src={modelUN}
-            alt="Model UN Logo"
-            width="70%"
-            height="70%"
-            className="rounded img-fluid"
+            alt="Model UN Logo"width="100%" height="1000px"   className="rounded img-fluid"
           />
         </div>
         <div className="col-md-9">

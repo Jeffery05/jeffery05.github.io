@@ -29,7 +29,7 @@ export default function About() {
           rel="stylesheet"
         />
       </head>
-      <div className="row gx-5 mb-6 mt-6">
+      <div className="row gx-5 about-hello">
         <div className="col-md-8">
           <h1 className="my-3">
             <b>Hello!</b>
@@ -53,42 +53,42 @@ export default function About() {
 
       <div className="row gx-5">
         <h1> Passions</h1>
-        <div className="col-md-4 logos">
+        <div className="col-md-4 icon-card">
+          <div className="abt-icon">
           <img
             src={softwareDev}
             alt="Software Development"
-            width="100%"
-            height="100%"
-            className="rounded img-fluid"
-          />
+           
+            className=" img-fluid"
+          /></div>
           <h3>Software Development</h3>
           <p>
             I love the creative nature of building software applications -
             there's no limits to what you can build!
           </p>
         </div>
-        <div className="col-md-4 logos">
+        <div className="col-md-4 icon-card">
+          <div className="abt-icon">
           <img
             src={engineering}
             alt="Software Development"
-            width="100%"
-            height="100%"
-            className="rounded img-fluid"
-          />
+           
+            className=" img-fluid"
+          /></div>
           <h3>Engineering</h3>
           <p>
             I am intrigued by the applied nature of engineering and how it uses
             technology and critical thinking to solve large problems.
           </p>
         </div>
-        <div className="col-md-4 logos">
+        <div className="col-md-4 icon-card">
+          <div className="abt-icon">
           <img
             src={business}
             alt="Software Development"
-            width="100%"
-            height="100%"
-            className="rounded img-fluid"
-          />
+           
+            className=" img-fluid"
+          /></div>
           <h3>Business</h3>
           <p>
             Whether I persue a start-up or work within a large corporation,
@@ -99,31 +99,31 @@ export default function About() {
       </div>
 
       <div className="row gx-5 mb-6 mt-6">
-        <h1 className="mt-6 my-3">
+        <h1>
           <b>Current Goals</b>
         </h1>
-        <div className="col-md-4 logos">
+        <div className="col-md-4 icon-card">
+          <div className="abt-icon">
           <img
             src={hackathons}
             alt="Software Development"
-            width="100%"
-            height="100%"
-            className="rounded img-fluid"
-          />
+           
+            className=" img-fluid"
+          /></div>
           <h3>Hackathons</h3>
           <p>
             I would like to attend even more hackathons in the future so I can
             continue to innovate and build impactful projects!
           </p>
         </div>
-        <div className="col-md-4 logos">
+        <div className="col-md-4 icon-card">
+          <div className="abt-icon">
           <img
             src={machineLearning}
             alt="Software Development"
-            width="100%"
-            height="100%"
-            className="rounded img-fluid"
-          />
+           
+            className=" img-fluid"
+          /></div>
           <h3>Machine Learning</h3>
           <p>
             I would like to take a deeper dive into machine learning - an
@@ -131,15 +131,14 @@ export default function About() {
             and live.
           </p>
         </div>
-        <div className="col-md-4 logos">
+        <div className="col-md-4 icon-card">
+          <div className="abt-icon">
           <img
             src={mandarin}
             alt="Software Development"
-            width="100%"
-            s
-            height="100%"
-            className="rounded img-fluid"
-          />
+
+            className=" img-fluid"
+          /></div>
           <h3>Mandarin</h3>
           <p>
             I would like to learn more mandarin to speak to my family and
@@ -149,52 +148,51 @@ export default function About() {
       </div>
 
       <div className="row gx-5 mb-6 mt-6">
-        <h1 className="mt-6 my-3">
+        <h1>
           <b>Other Interests</b>
         </h1>
-        <div className="col-md-4 logos">
+        <div className="col-md-4 icon-card">
+          <div className="abt-icon">
           <img
             src={sports}
             alt="Software Development"
-            width="100%"
-            height="100%"
-            className="rounded img-fluid"
-          />
+           
+            className=" img-fluid"
+          /></div>
           <h3>Sports</h3>
           <p>
             I love to exercise and play sports, including soccer, badminton, and
             ultimate frisbee.
           </p>
         </div>
-        <div className="col-md-4 logos">
+        <div className="col-md-4 icon-card">
+          <div className="abt-icon">
           <img
             src={community}
             alt="Software Development"
-            width="100%"
-            height="100%"
-            className="rounded img-fluid"
-          />
+           
+            className=" img-fluid"
+          /></div>
           <h3>Community</h3>
           <p>
             In my spare time, I like to volunteer in the community by organizing
             events, working with children, and helping local museums.
           </p>
         </div>
-        <div className="col-md-4 logos">
+        <div className="col-md-4 icon-card">
+          <div className="abt-icon">
           <img
             src={travel}
             alt="Software Development"
-            width="100%"
-            height="100%"
-            className="rounded img-fluid"
-          />
+            className=" img-fluid"
+          /></div>
           <h3>Travel</h3>
           <p>I enjoy exploring new places and experiencing new cultures!</p>
         </div>
       </div>
 
       <div className="row gx-5 mb-6 mt-6">
-        <div className="col-md-8">
+        <div className="col-md-6">
           <h3 className="p-6">Programming Languages</h3>
           <p>
             <ul>
@@ -208,7 +206,7 @@ export default function About() {
             </ul>
           </p>
         </div>
-        <div className="col-md-4 findme">
+        <div className="col-md-6 findme">
           <h2 className="mb-2">Find Me</h2>
           <p>
             <a

@@ -36,7 +36,7 @@ export default function Projects() {
               href="https://trash-dash-htv.herokuapp.com/"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-primary bg-primary"
+              className="btn btn-primary "
             >
               View Website
             </a>
@@ -44,7 +44,7 @@ export default function Projects() {
               href="https://devpost.com/software/trashdash"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-primary bg-primary ms-3"
+              className="btn btn-primary  ms-3"
             >
               Devpost
             </a>
@@ -52,7 +52,7 @@ export default function Projects() {
               href="https://github.com/Jeffery05/Hack-The-Valley"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-primary bg-primary ms-3"
+              className="btn btn-primary  ms-3"
             >
               View GitHub
             </a>
@@ -72,7 +72,7 @@ export default function Projects() {
               href="https://www.inflector.tech/"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-primary bg-primary"
+              className="btn btn-primary "
             >
               View Website
             </a>
@@ -80,7 +80,7 @@ export default function Projects() {
               href="https://devpost.com/software/inflector-the-inflation-projector"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-primary bg-primary ms-3"
+              className="btn btn-primary  ms-3"
             >
               Devpost
             </a>
@@ -88,7 +88,7 @@ export default function Projects() {
               href="https://github.com/Jeffery05/New-Ignition-Hacks"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-primary bg-primary ms-3"
+              className="btn btn-primary  ms-3"
             >
               View GitHub
             </a>
@@ -112,7 +112,7 @@ export default function Projects() {
               href="https://decamackenzie.ca/"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-primary bg-primary"
+              className="btn btn-primary "
             >
               View Website
             </a>
@@ -120,7 +120,7 @@ export default function Projects() {
               href="https://github.com/Jeffery05/DECA-Website"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-primary bg-primary ms-3"
+              className="btn btn-primary  ms-3"
             >
               View GitHub
             </a>
@@ -147,7 +147,7 @@ export default function Projects() {
               href="https://github.com/Jeffery05/Solving-Quantum-Mechanics-Using-Python"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-primary bg-primary"
+              className="btn btn-primary "
             >
               View GitHub
             </a>
@@ -171,7 +171,7 @@ export default function Projects() {
               href="https://devpost.com/software/greg-the-teaching-assistant"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-primary bg-primary"
+              className="btn btn-primary "
             >
               View DevPost
             </a>
@@ -199,7 +199,7 @@ export default function Projects() {
               href="https://github.com/Jeffery05/ICS-11-Final-Project"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-primary bg-primary"
+              className="btn btn-primary "
             >
               View GitHub
             </a>
@@ -226,7 +226,7 @@ export default function Projects() {
               href="https://github.com/Jeffery05/ICS-10-Final-Project"
               target="_blank"
               rel="noopener noreferrer"
-              className="btn btn-primary bg-primary"
+              className="btn btn-primary "
             >
               View GitHub
             </a>
