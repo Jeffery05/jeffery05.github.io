@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import TrashDash from "./images/TrashDash2.png";
 import Inflector from "./images/Inflector.png";
+import ConvertIt from "./images/ConvertIt.png";
 import DECAWebsite from "./images/DECAWebsite.png";
 import DEEP from "./images/DEEP Computational Physics Challenge Presentation.png";
 import LyonHacks from "./images/LyonHacks Greg The Teaching Assistant.png";
@@ -78,6 +79,38 @@ export default function Projects() {
             </a>
             <a
               href="https://github.com/Jeffery05/New-Ignition-Hacks"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary  ms-3"
+            >
+              View GitHub
+            </a>
+          </div>
+        </div>
+
+        <div className="card rounded mb-4 shadow-sm">
+          <img
+            className="card-img-top"
+            alt="Convert It"
+            src={ConvertIt}
+          />
+          <div className="card-body">
+            <h3 className="card-title"><b>Convert It.</b></h3>
+            <p className="card-text text-left">
+            A currency exchange tracker that can covert between 200+ currencies with real-time exchange rates updated every hour. Built using React JS and TypeScript!
+            </p>
+          </div>
+          <div className="card-footer">
+          <a
+              href="https://converter.jefferyhu.live/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary "
+            >
+              View Website
+            </a>
+            <a
+              href="https://github.com/Jeffery05/currency-converter"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-primary  ms-3"
