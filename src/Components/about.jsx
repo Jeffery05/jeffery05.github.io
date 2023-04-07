@@ -210,7 +210,7 @@ export default function About() {
                 className="rounded img-fluid"
               />
             </a>
-            <a href="Contact.html" target="_blank" rel="noopener noreferrer">
+            <a href="mailto:jefferyhu8@gmail.com" target="_blank" rel="noopener noreferrer">
               <img src={gmail} alt="Gmail Logo" className="rounded img-fluid" />
             </a>
             <a
