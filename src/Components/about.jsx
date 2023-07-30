@@ -27,7 +27,7 @@ export default function About() {
             <b>Hello!</b>
           </h1>
           <p>
-            I'm Jeffery, a grade 12 student at William Lyon Mackenzie CI. I have
+            I'm Jeffery, a CS/BBA double degree student at the University of Waterloo. I have
             a strong interest in software development, engineering, technology
             and business. In the future, I would like to use my technical
             knowledge in STEM and my practical understanding of business to

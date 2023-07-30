@@ -28,9 +28,7 @@ export default function Home() {
             Hello, I'm Jeffery!
           </h1>
           <p>
-            I am currently a grade 12 student in the
-            MaCS program (Math and Computer, Science program) at William Lyon
-            Mackenzie CI. Feel free to explore around my website! (I built it myself using React.js and HTML/CSS!) It features more about myself, my achievements, and my past coding projects.
+            I am currently a CS/BBA student at the University of Waterloo! Feel free to explore around my website! (I built it myself using React.js and HTML/CSS!) It features more about myself, my achievements, and my past coding projects.
           </p>
         </div>
         </div>
