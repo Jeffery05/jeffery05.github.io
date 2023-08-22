@@ -1,2 +1,3 @@
-# New-Personal-Website
-Jeffery's Personal Website now written in React.js! Link: [jefferyhu.live](https://jefferyhu.live/)
+# jeffery05.github.io
+Jeffery's Personal Website now written in React.js! Link: jeffery05.github.io
+
