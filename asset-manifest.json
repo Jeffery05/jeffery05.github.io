@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.de210dea.css",
-    "main.js": "/static/js/main.6fba6fd5.js",
+    "main.js": "/static/js/main.4194f282.js",
     "static/js/787.d7f22c0c.chunk.js": "/static/js/787.d7f22c0c.chunk.js",
     "static/media/MainPageBackground.svg": "/static/media/MainPageBackground.6fd633a47ae54470575a.svg",
     "static/media/DECAWebsite.png": "/static/media/DECAWebsite.301cd13cf64765b1334c.png",
@@ -34,11 +34,11 @@
     "index.html": "/index.html",
     "static/media/Jeffery Logo.svg": "/static/media/Jeffery Logo.71d95f3dfa056b69f3848a09b16f4cdb.svg",
     "main.de210dea.css.map": "/static/css/main.de210dea.css.map",
-    "main.6fba6fd5.js.map": "/static/js/main.6fba6fd5.js.map",
+    "main.4194f282.js.map": "/static/js/main.4194f282.js.map",
     "787.d7f22c0c.chunk.js.map": "/static/js/787.d7f22c0c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.de210dea.css",
-    "static/js/main.6fba6fd5.js"
+    "static/js/main.4194f282.js"
   ]
 }
