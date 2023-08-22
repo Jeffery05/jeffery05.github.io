@@ -134,7 +134,7 @@ export default function Projects() {
           </div>
           <div className="card-footer">
           <a
-              href="https://decamackenzie.ca/"
+              href="https://jeffery05.github.io/DECA-Website/"
               target="_blank"
               rel="noopener noreferrer"
               className="btn btn-primary "
