@@ -27,7 +27,7 @@ function App() {
           </NavLink>
           <NavLink to="/">Home</NavLink>
           <NavLink to="about">About</NavLink>
-          <NavLink to="achievements">Achievements</NavLink>
+          <NavLink to="achievements">Leadership</NavLink>
           <NavLink to="projects">Projects</NavLink>
           <a href="https://jefferyhu2005.wixsite.com/portfolio/oop-1" target="_blank">
             Tutorials

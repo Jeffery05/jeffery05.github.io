@@ -28,7 +28,7 @@ export default function Home() {
             Hello, I'm Jeffery!
           </h1>
           <p>
-            I am currently a CS/BBA student at the University of Waterloo! Feel free to explore around my website! (I built it myself using React.js and HTML/CSS!) It features more about myself, my achievements, and my past coding projects.
+          Currently, I am pursuing a double degree in Computer Science at the University of Waterloo and Business Administration at Wilfrid Laurier University. In the future, I aim to leverge my passion in both fields to build innovative products that solve pressing issues! <br /><br />Feel free to explore around my website (I built it myself using React.js). It features more about myself, my experiences, and my past coding projects!
           </p>
         </div>
         </div>

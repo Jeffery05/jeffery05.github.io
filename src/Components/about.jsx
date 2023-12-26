@@ -4,12 +4,9 @@ import github from "./images/GitHub.png";
 import devpost from "./images/DevPost.jpg";
 import dmoj from "./images/Dmoj.png";
 import mcpt from "./images/MCPT.png";
-import sciencefair from "./images/Jeffery Science Fair.jpg";
-import soccer from "./images/Jeffery_Soccer.jpg";
 import linkedin from "./images/LinkedIn.png";
 import gmail from "./images/Gmail Logo.png";
 import softwareDev from "./images/Software Development.svg";
-import engineering from "./images/Engineering.svg";
 import business from "./images/Business.svg";
 import sports from "./images/Sports.svg";
 import community from "./images/Community.svg";
@@ -17,6 +14,7 @@ import travel from "./images/Travel.svg";
 import hackathons from "./images/Hackathons.svg";
 import machineLearning from "./images/Machine Learning.svg";
 import mandarin from "./images/Mandarin.svg";
+import movie from "./images/Movie.png";
 
 export default function About() {
   return (
@@ -27,15 +25,10 @@ export default function About() {
             <b>Hello!</b>
           </h1>
           <p>
-            I'm Jeffery, a CS/BBA double degree student at the University of Waterloo. I have
-            a strong interest in software development, engineering, technology
-            and business. In the future, I would like to use my technical
-            knowledge in STEM and my practical understanding of business to
-            solve pressing real-world issues and make a positive impact on the
-            world! I love to innovate and learn new things, whether that's
-            through developing impactful web application or leading a middle
-            school science olympiad. Have a closer look at my passions and goals
-            below!
+            I'm Jeffery, a CS/BBA student at the University of Waterloo. I have
+            a strong interest in software development, financial markets and entrepreneurship.
+            During my free time, I like to create impactful projects for hackathons, present software-related solutions in case competitions and participate in sports.
+            Regardless of the setting, I am consistently driven to innovate, embrace new challenges and develop my skills to make the world a better place!
           </p>
         </div>
         <div className="col-md-4 portrait">
@@ -55,22 +48,7 @@ export default function About() {
           /></div>
           <h3>Software Development</h3>
           <p>
-            I love the creative nature of building software applications -
-            there's no limits to what you can build!
-          </p>
-        </div>
-        <div className="col-md-4 icon-card">
-          <div className="abt-icon">
-          <img
-            src={engineering}
-            alt="Engineering"
-           
-            className=" img-fluid"
-          /></div>
-          <h3>Engineering</h3>
-          <p>
-            I am intrigued by the applied nature of engineering and how it uses
-            technology and critical thinking to solve large problems.
+            I love the creative nature of building software applications where advancements in technology can be applied to limitless fields.
           </p>
         </div>
         <div className="col-md-4 icon-card">
@@ -81,33 +59,30 @@ export default function About() {
            
             className=" img-fluid"
           /></div>
-          <h3>Business</h3>
+          <h3>Financial Markets</h3>
           <p>
-            Whether I persue a start-up or work within a large corporation,
-            business knowledge will help me excel in future managerial
-            positions.
+            I am intrigued by the financial system and how current events, businesses and central banks shape our economy today.
+          </p>
+        </div>
+        <div className="col-md-4 icon-card">
+          <div className="abt-icon">
+          <img
+            src={community}
+            alt="Community Building"
+           
+            className=" img-fluid"
+          /></div>
+          <h3>Community Building</h3>
+          <p>
+            I am passionate about giving back to the community, whether through organizing events, mentoring others or supporting charities. 
           </p>
         </div>
       </div>
 
       <div className="row gx-5 mb-6 mt-6">
         <h1>
-          <b>Current Goals</b>
+          <b>Current Interests</b>
         </h1>
-        <div className="col-md-4 icon-card">
-          <div className="abt-icon">
-          <img
-            src={hackathons}
-            alt="Hackathons"
-           
-            className=" img-fluid"
-          /></div>
-          <h3>Hackathons</h3>
-          <p>
-            I would like to attend even more hackathons in the future so I can
-            continue to innovate and build impactful projects!
-          </p>
-        </div>
         <div className="col-md-4 icon-card">
           <div className="abt-icon">
           <img
@@ -116,11 +91,22 @@ export default function About() {
            
             className=" img-fluid"
           /></div>
-          <h3>Machine Learning</h3>
+          <h3>Generative AI</h3>
           <p>
-            I would like to take a deeper dive into machine learning - an
-            emerging technology that can revolutionize the way we work, travel,
-            and live.
+            I would like to take a deeper dive into Generative AI, which has the potential to revolutionize the way we work, travel, and live.
+          </p>
+        </div>
+        <div className="col-md-4 icon-card">
+          <div className="abt-icon">
+          <img
+            src={hackathons}
+            alt="Quantitative Trading"
+           
+            className=" img-fluid"
+          /></div>
+          <h3>Quantitative Trading</h3>
+          <p>
+          I am eager to learn more about quantitative trading, exploring algorithms and financial indicators to formulate trade strategies.
           </p>
         </div>
         <div className="col-md-4 icon-card">
@@ -160,15 +146,14 @@ export default function About() {
         <div className="col-md-4 icon-card">
           <div className="abt-icon">
           <img
-            src={community}
-            alt="Community"
+            src={movie}
+            alt="Movie"
            
             className=" img-fluid"
           /></div>
-          <h3>Community</h3>
+          <h3>Movies</h3>
           <p>
-            In my spare time, I like to volunteer in the community by organizing
-            events, working with children, and helping local museums.
+            I enjoy watching movies with friends, with some of my favourites being the Hunger Games series and Oppenheimer.
           </p>
         </div>
         <div className="col-md-4 icon-card">
@@ -188,11 +173,12 @@ export default function About() {
           <h3 className="p-6"><b>Programming Languages:</b></h3>
           <p>
             <ul>
+              <li>Python</li>
               <li>Java</li>
-              <li>JavaScript & React</li>
+              <li>JavaScript/TypeScript</li>
               <li>HTML/CSS</li>
-              <li>Python & Flask</li>
-              <li>SQLite</li>
+              <li>SQL</li>
+              <li>C/C++</li>
             </ul>
           </p>
         </div>
