@@ -4,15 +4,45 @@ import decaLogo from "./images/DECA Logo.png";
 import modelUN from "./images/Model UN Logo.png";
 import SMS from "./images/SoM-Logo.png";
 import metro from "./images/MacLyonsDen.png";
-import resume from "./images/Jeffery Hu_Resume.pdf";
+import LCT from "./images/LCT Logo.png";
 
 export default function Achievements() {
   return (
     <div className="container body-content achieve">
-      <div className="row">
+      <div className="row mb-3">
         <h1>
-          <b>Experience:</b>
+          <b>Leadership Experience:</b>
         </h1>
+        <p>Over the past several years, I have had the privilege of serving in diverse leadership roles, contributing to the community by organizing and uniting others around a shared vision.
+          Have a look at some of my previous and current positions below!
+        </p>
+      </div>
+      <div className="row gx-4 mb-3">
+        <div className="col-md-3 ps-3">
+          <a
+            href="https://www.linkedin.com/company/laurier-case-competition-team/mycompany/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={LCT}
+              alt="Laurier Case Team Logo" width="100%" height="1000px"     className="rounded img-fluid"
+            />
+          </a>
+        </div>
+        <div className="col-md-9">
+            <h3><b>Executive - Laurier Case Team</b></h3>
+          <p>September 2023 - Present</p>
+          <hr />
+          <ul>
+            <li>
+            Present software strategies to solve business case studies on a weekly basis in preparation for national competitions
+            </li>
+            <li>
+            Organized Laurier Interactive Case Summit, a case competition involving 100+ students, 5 universities and $7000 in prizes from Deloitte & SAP
+            </li>
+          </ul>
+        </div>
       </div>
       <div className="row gx-4 mb-3">
         <div className="col-md-3 ps-3">
@@ -48,7 +78,7 @@ export default function Achievements() {
       </div>
       <div className="row gx-4 mb-3">
         <div className="col-md-3 ps-3">
-          <a href="https://decamackenzie.ca/" target="_blank" rel="noopener noreferrer">
+          <a href="https://jefferyhu.me/DECA-Website/" target="_blank" rel="noopener noreferrer">
             <img
               src={decaLogo}
               alt="DECA Mackenzie Logo"width="100%" height="1000px"     className="rounded img-fluid"
@@ -80,6 +110,37 @@ export default function Achievements() {
           </ul>
         </div>
       </div>
+      
+
+      <div className="row gx-4 mb-3">
+        <div className="col-md-3 ps-3">
+          <a href="https://maclyonsden.com/" target="_blank" rel="noopener noreferrer">
+            <img
+              src={metro}
+              alt="Mac Lyons Den Logo"width="100%" height="1000px"     className="rounded img-fluid"
+            />
+          </a>
+        </div>
+        <div className="col-md-9">
+          <h3>
+            <b>Front-End Developer - Project Metropolis</b>
+          </h3>
+          <p>August 2022-June 2023</p>
+          <hr />
+          <ul>
+            <li>
+            	Implemented a Rich Text Editor and announcement creation interface in React.js, enabling executives from 60+ clubs to post announcements on William Lyon Mackenzie CI’s official website.
+            </li>
+            <li>
+              Designed a user-friendly announcement viewing page for 600+ students, enhancing announcement accessibility and increasing platform users by 20%.
+            </li>
+            <li>
+              Utilized Agile principles to collaborate with other developers and deliver new features on time.
+            </li>
+          </ul>
+        </div>
+      </div>
+
       <div className="row gx-4 mb-3">
         <div className="col-md-3 ps-3">
           <img
@@ -106,37 +167,7 @@ export default function Achievements() {
         </div>
       </div>
 
-      <div className="row gx-4 mb-3">
-        <div className="col-md-3 ps-3">
-          <a href="https://maclyonsden.com/" target="_blank" rel="noopener noreferrer">
-            <img
-              src={metro}
-              alt="Mac Lyons Den Logo"width="100%" height="1000px"     className="rounded img-fluid"
-            />
-          </a>
-        </div>
-        <div className="col-md-9">
-          <h3>
-            <b>Front-End Developer - Project Metropolis</b>
-          </h3>
-          <p>August 2022-June 2023</p>
-          <hr />
-          <ul>
-            <li>
-              Collaborate with other developers to build the official school website.
-            </li>
-            <li>
-              Created the user interface for club executives to submit
-              announcements.
-            </li>
-            <li>
-              Gained experience using React.js
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div className="row gx-4 mb-3">
+      <div className="row gx-4 mb-3 mt-5">
         <div className="col-md-3 ps-3">
           <img
             src={modelUN}
@@ -163,14 +194,6 @@ export default function Achievements() {
             </li>
           </ul>
         </div>
-      </div>
-      <hr />
-
-      <div className="row mb-1">
-        <h1>
-          <b>Resume:</b>
-        </h1>
-        <iframe src={resume} width="100%" height="1000px"></iframe>
       </div>
       <hr />
       <footer>

@@ -359,9 +359,7 @@ main > .container {
   margin-bottom: 100px !important;
   align-items: center;
 }
-.achieve .row.mb-3:nth-last-of-type(2) {
-  margin-bottom: 0 !important;
-}
+
 
 .achieve img {
   width: 70%;
