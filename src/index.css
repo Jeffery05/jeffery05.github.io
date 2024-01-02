@@ -386,3 +386,7 @@ main > .contact {
   background-color: var(--sky-color) !important;
   color: var(--secondary) !important;
 }
+
+.card-footer-txt {
+  font-size: 20px !important;
+}
