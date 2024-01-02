@@ -1,19 +1,23 @@
 {
   "files": {
-    "main.css": "/static/css/main.8f6225c4.css",
-    "main.js": "/static/js/main.95a02c0f.js",
+    "main.css": "/static/css/main.bbb2fa9b.css",
+    "main.js": "/static/js/main.1b4c92c3.js",
     "static/js/787.b25ea5c6.chunk.js": "/static/js/787.b25ea5c6.chunk.js",
     "static/media/MainPageBackground.svg": "/static/media/MainPageBackground.6fd633a47ae54470575a.svg",
+    "static/media/pAIge.png": "/static/media/pAIge.a1b031a409df61e00182.png",
     "static/media/DECAWebsite.png": "/static/media/DECAWebsite.301cd13cf64765b1334c.png",
     "static/media/ConvertIt.png": "/static/media/ConvertIt.5284f37115be231e3f5f.png",
     "static/media/LyonHacks Greg The Teaching Assistant.png": "/static/media/LyonHacks Greg The Teaching Assistant.3911a16c50356aa29be8.png",
     "static/media/TrashDash2.png": "/static/media/TrashDash2.903e1580189ad682e21d.png",
     "static/media/JefferyWebPhoto.jpg": "/static/media/JefferyWebPhoto.f0b521e66f60fdc8e808.jpg",
+    "static/media/Traffic_System.jpg": "/static/media/Traffic_System.0c45e1d5c810944c9730.jpg",
+    "static/media/MeetUp.png": "/static/media/MeetUp.53b47579058c21b4e4ed.png",
     "static/media/Model UN Logo.png": "/static/media/Model UN Logo.07d0b4555982359a9a7b.png",
     "static/media/MSC Logo.png": "/static/media/MSC Logo.d3c45ba938849b62b35f.png",
     "static/media/DECA Logo.png": "/static/media/DECA Logo.4564ce9b551de0b5bec2.png",
     "static/media/LCT Logo.png": "/static/media/LCT Logo.b273e9932164137db094.png",
-    "static/media/Inflector.png": "/static/media/Inflector.8cedcc1d27f45063bfde.png",
+    "static/media/Jobber.png": "/static/media/Jobber.8a2e22d26ede3442c891.png",
+    "static/media/Inflector.png": "/static/media/Inflector.1186901744b20deb0ca1.png",
     "static/media/DEEP Computational Physics Challenge Presentation.png": "/static/media/DEEP Computational Physics Challenge Presentation.99858378eb45287f4345.png",
     "static/media/Gmail Logo.png": "/static/media/Gmail Logo.8617491fcc79ce289ea8.png",
     "static/media/Community.svg": "/static/media/Community.3435bc888e7c88defe943e0760a2e03c.svg",
@@ -31,12 +35,12 @@
     "static/media/Software Development.svg": "/static/media/Software Development.424d0dbf6162906c0d3718593c7ea101.svg",
     "index.html": "/index.html",
     "static/media/Jeffery Logo.svg": "/static/media/Jeffery Logo.71d95f3dfa056b69f3848a09b16f4cdb.svg",
-    "main.8f6225c4.css.map": "/static/css/main.8f6225c4.css.map",
-    "main.95a02c0f.js.map": "/static/js/main.95a02c0f.js.map",
+    "main.bbb2fa9b.css.map": "/static/css/main.bbb2fa9b.css.map",
+    "main.1b4c92c3.js.map": "/static/js/main.1b4c92c3.js.map",
     "787.b25ea5c6.chunk.js.map": "/static/js/787.b25ea5c6.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8f6225c4.css",
-    "static/js/main.95a02c0f.js"
+    "static/css/main.bbb2fa9b.css",
+    "static/js/main.1b4c92c3.js"
   ]
 }
