@@ -30,7 +30,7 @@ function App() {
           <NavLink to="achievements">Leadership</NavLink>
           <NavLink to="projects">Projects</NavLink>
           <a href="https://jefferyhu2005.wixsite.com/portfolio" target="_blank">
-            Tutorials
+            Java Tutorials
           </a>
           <NavLink to="contact">Contact</NavLink>
         </nav>
