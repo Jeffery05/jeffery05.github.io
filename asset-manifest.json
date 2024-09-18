@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.bbb2fa9b.css",
-    "main.js": "/static/js/main.1f346bcd.js",
+    "main.js": "/static/js/main.a99e3c6d.js",
     "static/js/787.b25ea5c6.chunk.js": "/static/js/787.b25ea5c6.chunk.js",
     "static/media/MainPageBackground.svg": "/static/media/MainPageBackground.6fd633a47ae54470575a.svg",
     "static/media/pAIge.png": "/static/media/pAIge.a1b031a409df61e00182.png",
@@ -16,7 +16,9 @@
     "static/media/MSC Logo.png": "/static/media/MSC Logo.d3c45ba938849b62b35f.png",
     "static/media/DECA Logo.png": "/static/media/DECA Logo.4564ce9b551de0b5bec2.png",
     "static/media/LCT Logo.png": "/static/media/LCT Logo.b273e9932164137db094.png",
+    "static/media/SnapTime Logo.png": "/static/media/SnapTime Logo.51a420134c0c3f6a65a4.png",
     "static/media/Jobber.png": "/static/media/Jobber.8a2e22d26ede3442c891.png",
+    "static/media/CSC Logo.jpg": "/static/media/CSC Logo.df8ca3bdf13d78b7103f.jpg",
     "static/media/Inflector.png": "/static/media/Inflector.1186901744b20deb0ca1.png",
     "static/media/DEEP Computational Physics Challenge Presentation.png": "/static/media/DEEP Computational Physics Challenge Presentation.99858378eb45287f4345.png",
     "static/media/Gmail Logo.png": "/static/media/Gmail Logo.8617491fcc79ce289ea8.png",
@@ -26,6 +28,7 @@
     "static/media/Mandarin.svg": "/static/media/Mandarin.d14a113ed210980e673737ac72b349b1.svg",
     "static/media/SimonSays_PNG.webp": "/static/media/SimonSays_PNG.0a04882fd9424b74a228.webp",
     "static/media/Business.svg": "/static/media/Business.a065e6f6b5957c6aef9b01efe4775f00.svg",
+    "static/media/OSFI Logo.png": "/static/media/OSFI Logo.7a906db6b3e719f8e3cc.png",
     "static/media/Hackathons.svg": "/static/media/Hackathons.e5bb7b7cdbef3fa458b5150389e14a31.svg",
     "static/media/Sports.svg": "/static/media/Sports.a27babaf80d859d951f0acb770e030ed.svg",
     "static/media/Movie.png": "/static/media/Movie.20dad03c8924309e12eb.png",
@@ -36,11 +39,11 @@
     "index.html": "/index.html",
     "static/media/Jeffery Logo.svg": "/static/media/Jeffery Logo.71d95f3dfa056b69f3848a09b16f4cdb.svg",
     "main.bbb2fa9b.css.map": "/static/css/main.bbb2fa9b.css.map",
-    "main.1f346bcd.js.map": "/static/js/main.1f346bcd.js.map",
+    "main.a99e3c6d.js.map": "/static/js/main.a99e3c6d.js.map",
     "787.b25ea5c6.chunk.js.map": "/static/js/787.b25ea5c6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.bbb2fa9b.css",
-    "static/js/main.1f346bcd.js"
+    "static/js/main.a99e3c6d.js"
   ]
 }
