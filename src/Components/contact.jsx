@@ -99,7 +99,7 @@ export default function Contact() {
         </button>
         <hr />
         <footer>
-          <p>© 2023 - Jeffery Hu</p>
+          <p>© 2024 - Jeffery Hu</p>
         </footer>
         <input
           type="hidden"

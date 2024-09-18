@@ -11,6 +11,7 @@ import pAIge from "./images/pAIge.png";
 import Traffic_System from "./images/Traffic_System.jpg";
 import MeetUp from "./images/MeetUp.png";
 import Jobber from "./images/Jobber.png";
+import SnapTime from "./images/SnapTime Logo.png"
 
 export default function Projects() {
   return (
@@ -22,7 +23,44 @@ export default function Projects() {
         </div>
 
         <div className="card rounded mb-4 shadow-sm">
-          <img className="card-img-top" alt="Inflector" src={MeetUp} />
+          <img className="card-img-top" alt="SnapTime" src={SnapTime} />
+          <div className="card-body">
+            <h3 className="card-title"><b>SnapTime!</b></h3>
+            <p className="card-footer-txt"><i>Languages: React.js, Node.js, SQLite</i></p>
+            <p className="card-text text-left">     
+      Looking to "touch grass"? Introducing SnapTime, the picture scavenger hunt game that streamlines your outdoor adventures!<br/>
+            </p>
+          </div>
+          <div className="card-footer">
+          <a
+              href="https://devpost.com/software/snaptime"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary "
+            >
+              View Devpost
+            </a>
+            <a
+              href="https://youtu.be/5mdBK-Gabrk"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary  ms-3"
+            >
+              Demo
+            </a>
+            <a
+              href="https://github.com/snaptime-app"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-primary  ms-3"
+            >
+              View GitHub
+            </a>
+          </div>
+        </div>
+
+        <div className="card rounded mb-4 shadow-sm">
+          <img className="card-img-top" alt="MeetUp" src={MeetUp} />
           <div className="card-body">
             <h3 className="card-title"><b>Meet Up</b></h3>
             <p className="card-footer-txt"><i>Languages: Python, JavaScript, SQL, HTML/CSS</i></p>
@@ -383,7 +421,7 @@ export default function Projects() {
       </div>
       <hr />
       <footer>
-        <p>© 2023 - Jeffery Hu</p>
+        <p>© 2024 - Jeffery Hu</p>
       </footer>
     </div>
   );

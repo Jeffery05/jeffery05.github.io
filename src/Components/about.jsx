@@ -27,7 +27,7 @@ export default function About() {
           <p>
             I'm Jeffery, a CS/BBA student at the University of Waterloo. I have
             a strong interest in software development, financial markets and entrepreneurship.
-            During my free time, I like to create impactful projects for hackathons, present software-related solutions in case competitions and participate in sports.
+            During my free time, I like to create impactful projects for hackathons, present innovative solutions in case competitions and participate in sports.
             Regardless of the setting, I am consistently driven to innovate, embrace new challenges and develop my skills to make the world a better place!
           </p>
         </div>
@@ -254,7 +254,7 @@ export default function About() {
       </div>
       <hr />
       <footer>
-        <p>© 2023 - Jeffery Hu</p>
+        <p>© 2024 - Jeffery Hu</p>
       </footer>
     </div>
   );

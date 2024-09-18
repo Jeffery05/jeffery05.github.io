@@ -5,17 +5,125 @@ import modelUN from "./images/Model UN Logo.png";
 import SMS from "./images/SoM-Logo.png";
 import metro from "./images/MacLyonsDen.png";
 import LCT from "./images/LCT Logo.png";
+import CSC from "./images/CSC Logo.jpg";
+import Blueprint from "./images/New UW Blueprint Logo.jpg";
+import OSFI from "./images/OSFI Logo.png";
 
 export default function Achievements() {
   return (
     <div className="container body-content achieve">
       <div className="row mb-3">
         <h1>
-          <b>Leadership Experience:</b>
+          <b>Work Experience:</b>
         </h1>
-        <p>Over the past several years, I have had the privilege of serving in diverse leadership roles, contributing to the community by organizing and uniting others around a shared vision.
+        <p>Over the past several years, I have had the privilege of serving in diverse roles, from developing software for non-profits to helping safeguard Canada's financial system.
           Have a look at some of my previous and current positions below!
         </p>
+      </div>
+      <div className="row gx-4 mb-3">
+        <div className="col-md-3 ps-3">
+          <a
+            href="https://www.osfi-bsif.gc.ca/en"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={OSFI}
+              alt="OSFI" width="100%" height="1000px" className="rounded img-fluid"
+            />
+          </a>
+        </div>
+        <div className="col-md-9">
+            <h3><b>Data Scientist - Office of the Superintendent of Financial Institutions</b></h3>
+          <p>May 2024 - August 2024</p>
+          <hr />
+          <ul>
+            <li>
+            Developed a Power BI dashboard to monitor the average risk ratings for 400+ financial institutions across OSFI's 24 risk 
+categories, which is utilized by senior management in presentations to the Minister of Finance and boards of directors
+            </li>
+            <li>
+            Optimized data processing by utilizing Python (PySpark), SQL and Excel to reduce the calculation time of 4,000+ key 
+risk indicator calculations by 60%, saving supervisors hundreds of hours of time collectively
+            </li>
+            <li>
+            Developed and documented an internal system support application utilized by 400+ supervisors to receive deadline 
+reminders and direct assistance for system-related issues, leveraging Power Apps and Power Automate
+            </li>
+            <li>
+            Built pipelines in Microsoft Azure Synapse to automate daily data retrieval, script execution and SQL database refresh
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div className="row gx-4 mb-3">
+        <div className="col-md-3 ps-3">
+          <a
+            href="https://uwblueprint.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={Blueprint}
+              alt="UW Blueprint Logo" width="100%" height="1000px" className="rounded img-fluid"
+            />
+          </a>
+        </div>
+        <div className="col-md-9">
+            <h3><b>Software Developer - University of Waterloo Blueprint</b></h3>
+          <p>May 2024 - Present</p>
+          <hr />
+          <ul>
+            <li>
+            Collaborated with a team of 8 developers to build a full-stack web application for Extend-A-Family, a Waterloo non-profit, 
+to deliver customizable financial literacy courses directly to 1,706 youth with developmental disabilities
+            </li>
+            <li>
+            Implemented complex relationships between courses, elements and users in a MongoDB database using Mongoose
+            </li>
+            <li>
+            Developed backend REST API endpoints using Express.js to manage user authentication, course content retrieval and 
+            progress tracking, ensuring secure and efficient data handling across the application
+            </li>
+            <li>
+            Created interactive welcome and login pages utilizing React.js and integrated Google Firebase for user authentication
+            </li>
+            <li>
+            Utilized GitHub, Docker and Agile methodologies to streamline development, version control and timely feature delivery
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div className="row gx-4 mb-3">
+        <div className="col-md-3 ps-3">
+          <a
+            href="https://csclub.uwaterloo.ca/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={CSC}
+              alt="Computer Science Club Logo" width="100%" height="1000px"     className="rounded img-fluid"
+            />
+          </a>
+        </div>
+        <div className="col-md-9">
+            <h3><b>Software Developer - Computer Science Club</b></h3>
+          <p>May 2024 - Present</p>
+          <hr />
+          <ul>
+            <li>
+            Enhanced the Computer Science Club website for 4,000+ members using React.js by adding announcement features, 
+improving interactivity and upgrading site styling
+            </li>
+            <li>
+            Designed PostgreSQL database schemas with Prisma for a book management app to track the club’s 200+ books
+            </li>
+            <li>
+            Constructed backend REST API endpoints in Next.js for book sign-in/out, alerts and catalog management
+            </li>
+          </ul>
+        </div>
       </div>
       <div className="row gx-4 mb-3">
         <div className="col-md-3 ps-3">
@@ -31,15 +139,22 @@ export default function Achievements() {
           </a>
         </div>
         <div className="col-md-9">
-            <h3><b>Executive - Laurier Case Team</b></h3>
+            <h3><b>Competitor - Laurier Case Team</b></h3>
           <p>September 2023 - Present</p>
           <hr />
           <ul>
-            <li>
-            Present software strategies to solve business case studies on a weekly basis in preparation for national competitions
+          <li>
+            Selected to represent Wilfrid Laurier University at JDCC, Canada’s largest undergraduate case competition
             </li>
             <li>
-            Organized Laurier Interactive Case Summit, a case competition involving 100+ students, 5 universities and $7000 in prizes from Deloitte & SAP
+            Applied analytical and critical thinking skills to dissect business case studies, research industry trends and present compelling solutions to a judge panel on a weekly basis
+            </li>
+            <li>
+              Utilized Excel to perform financial analysis to justify the viability of recommendations
+            </li>
+            <li>
+              Collaborated with faculty, sponsors, and fellow executives to secure funding, speakers, and resources for the Laurier 
+              Interactive Case Summit, a case competition involving 100+ students, 5 universities and $7000 in prizes from Deloitte
             </li>
           </ul>
         </div>
@@ -197,7 +312,7 @@ export default function Achievements() {
       </div>
       <hr />
       <footer>
-        <p>© 2023 - Jeffery Hu</p>
+        <p>© 2024 - Jeffery Hu</p>
       </footer>
     </div>
   );
