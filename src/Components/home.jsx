@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import potrait from "./images/JefferyWebPhoto.jpg"
+import potrait from "./images/JefferyWebPhoto.JPG"
 
 export default function Home() {
   return (
@@ -33,7 +33,6 @@ export default function Home() {
         </div>
         </div>
         <div className="col-md-4 portrait"><img src={potrait} alt="Jeffery Hu Potrait" /></div>
-        {/* <img className="col-md-4 img-fluid" src={potrait} alt="Jeffery Hu Potrait" /> */}
       </div>
     </div>
   );

@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import potrait from "./images/JefferyWebPhoto.jpg";
+import potrait from "./images/JefferyWebPhoto.JPG";
 import github from "./images/GitHub.png";
 import devpost from "./images/DevPost.jpg";
 import dmoj from "./images/Dmoj.png";
@@ -25,10 +25,7 @@ export default function About() {
             <b>Hello!</b>
           </h1>
           <p>
-            I'm Jeffery, a CS/BBA student at the University of Waterloo. I have
-            a strong interest in software development, financial markets and entrepreneurship.
-            During my free time, I like to create impactful projects for hackathons, present innovative solutions in case competitions and participate in sports.
-            Regardless of the setting, I am consistently driven to innovate, embrace new challenges and develop my skills to make the world a better place!
+            I'm Jeffery, a Computer Science and Business Administration double degree student at the University of Waterloo and Wilfrid Laurier University. I'm particularly interested in the intersection of technology and finance, with experience in software development, quantitative research, and financial strategy. Outside of academics, I enjoy building projects for hackathons, competing in case competitions, and staying active through sports. I'm driven by curiosity, a desire to solve challenging problems, and a passion for creating practical, real-world impact.
           </p>
         </div>
         <div className="col-md-4 portrait">
@@ -254,7 +251,7 @@ export default function About() {
       </div>
       <hr />
       <footer>
-        <p>© 2024 - Jeffery Hu</p>
+        <p>© 2025 - Jeffery Hu</p>
       </footer>
     </div>
   );

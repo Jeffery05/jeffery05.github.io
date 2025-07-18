@@ -1,13 +1,11 @@
 import React, { Component } from "react";
-import mscLogo from "./images/MSC Logo.png";
-import decaLogo from "./images/DECA Logo.png";
-import modelUN from "./images/Model UN Logo.png";
-import SMS from "./images/SoM-Logo.png";
-import metro from "./images/MacLyonsDen.png";
-import LCT from "./images/LCT Logo.png";
+import FARMSA from "./images/UW_FARMSA.png";
 import CSC from "./images/CSC Logo.jpg";
+import LCT from "./images/LCT Logo.png";
+import UW from "./images/UW_Logo.png";
 import Blueprint from "./images/New UW Blueprint Logo.jpg";
 import OSFI from "./images/OSFI Logo.png";
+import OTPP from "./images/OTPP.png";
 
 export default function Achievements() {
   return (
@@ -16,10 +14,46 @@ export default function Achievements() {
         <h1>
           <b>Work Experience:</b>
         </h1>
-        <p>Over the past several years, I have had the privilege of serving in diverse roles, from developing software for non-profits to helping safeguard Canada's financial system.
-          Have a look at some of my previous and current positions below!
+        <p>Over the past few years, I’ve worked at the intersection of technology and finance—refining execution strategies in quantitative trading, building software for non-profits, and researching machine learning-based signals in decentralized finance. Below are some of the roles where I’ve had the opportunity to apply and develop these skills:
         </p>
       </div>
+      <div className="row gx-4 mb-3">
+        <div className="col-md-3 ps-3">
+          <a
+            href="https://www.otpp.com/en-ca/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={OTPP}
+              alt="OTPP" width="100%" height="1000px" className="rounded img-fluid"
+            />
+          </a>
+        </div>
+        <div className="col-md-9">
+            <h3><b>Trading Intern - Ontario Teachers’ Pension Plan</b></h3>
+          <p>January 2025 - April 2025</p>
+          <hr />
+          <ul>
+            <li>
+            Developed tools supporting the equities, FX, commodities, credit, rates and repo desks, facilitating $3T+ in annual trades
+            </li>
+            <li>
+            Optimized execution strategies for the Quantitative Strategy Research portfolio by modeling volume and volatility curves in Pandas and NumPy to evaluate slippage and market impact, identifying $1.1M+ in projected cost savings
+            </li>
+            <li>
+            Placed 1st out of 40+ teams in OTPP’s internal hackathon by developing an agentic AI assistant integrated with the trading blotter that interprets trader intent and intelligently runs internal tools like performing transaction cost analysis (TCA), displaying dealer commentary and querying historical pricing via MS Teams chat
+            </li>
+            <li>
+            Built a multi-leg OTC options pricer using Black-Scholes, streamlining the execution of $50M+ vega in trades
+            </li>
+            <li>
+            Automated credit derivatives pricing by parsing Bloomberg dealer email runs with Python and visualizing CDX Option, tranche, and TRS quotes in a Power BI dashboard for credit traders
+            </li>
+          </ul>
+        </div>
+      </div>
+      
       <div className="row gx-4 mb-3">
         <div className="col-md-3 ps-3">
           <a
@@ -34,7 +68,7 @@ export default function Achievements() {
           </a>
         </div>
         <div className="col-md-9">
-            <h3><b>Data Scientist - Office of the Superintendent of Financial Institutions</b></h3>
+            <h3><b>Data Analyst Intern - Office of the Superintendent of Financial Institutions</b></h3>
           <p>May 2024 - August 2024</p>
           <hr />
           <ul>
@@ -56,6 +90,64 @@ reminders and direct assistance for system-related issues, leveraging Power Apps
           </ul>
         </div>
       </div>
+
+      <div className="row gx-4 mb-3">
+        <div className="col-md-3 ps-3">
+          <a
+            href="https://cs.uwaterloo.ca/current-undergraduate-students/research-opportunities/ura"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={UW}
+              alt="University of Waterloo Logo"width="100%" height="1000px" className="rounded img-fluid"
+            />
+          </a>
+        </div>
+        <div className="col-md-9">
+            <h3><b>Undergraduate Research Assistant - University of Waterloo</b></h3>
+          <p>May 2025 - August 2025</p>
+          <hr />
+          <ul>
+            <li>
+              Researching alpha-driven crypto trading strategies using machine learning (ML) under Professor Raouf Boutaba, Director of the Cheriton School of Computer Science
+            </li>
+            <li>
+              Leveraging XGBoost, a supervised ML model based on gradient-boosted trees, to process on-chain metrics and whale-alert tweets and identify short-term trading opportunities driven by large wallet activity
+            </li>
+            <li>Translating complex academic papers into practical ML strategies for volatility forecasting and crypto signal development</li>
+          </ul>
+        </div>
+      </div>
+      <div className="row gx-4 mb-3">
+        <div className="col-md-3 ps-3">
+          <a>
+            <img
+              src={FARMSA}
+              alt="DECA Mackenzie Logo"width="100%" height="1000px"     className="rounded img-fluid"
+            />
+          </a>
+        </div>
+        <div className="col-md-9">
+          <h3>
+            <b>Vice President of Quantitative Trading - UW FARMSA</b>
+          </h3>
+          <p>June 2022-June 2023</p>
+          <hr />
+          <ul>
+            <li>
+              Leading a team of 10 analysts to build a vega-neutral dispersion trading algorithm exploiting correlation mispricing
+            </li>
+            <li>
+              Developing trading signals, structuring multi-leg options strategies and guiding analysts in back testing and PnL modeling
+            </li>
+            <li>
+              Managing team workflows and delivering presentations on volatility surfaces, straddles and correlation dynamics
+            </li>
+          </ul>
+        </div>
+      </div>
+
       <div className="row gx-4 mb-3">
         <div className="col-md-3 ps-3">
           <a
@@ -94,6 +186,38 @@ to deliver customizable financial literacy courses directly to 1,706 youth with 
           </ul>
         </div>
       </div>
+
+      <div className="row gx-4 mb-3">
+        <div className="col-md-3 ps-3">
+          <a
+            href="https://www.linkedin.com/company/laurier-case-competition-team/mycompany/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={LCT}
+              alt="Laurier Case Team Logo" width="100%" height="1000px"     className="rounded img-fluid"
+            />
+          </a>
+        </div>
+        <div className="col-md-9">
+            <h3><b>International Team Competitor - Laurier Case Team</b></h3>
+          <p>September 2023 - Present</p>
+          <hr />
+          <ul>
+          <li>
+          Competed at BBICC (Belgrade) and selected to compete in ROCA (Rotterdam), two of the world’s top 10 most prestigious undergraduate case competitions
+            </li>
+            <li>
+            Placed first in the Digital Strategy category at JDCC (1/9 universities), Canada’s largest undergraduate case competition
+            </li>
+            <li>
+            Delivered real-time strategic decisions under 5-hour time constraints by analyzing market, financial, and operational data
+            </li>
+          </ul>
+        </div>
+      </div>
+      
       <div className="row gx-4 mb-3">
         <div className="col-md-3 ps-3">
           <a
@@ -109,7 +233,7 @@ to deliver customizable financial literacy courses directly to 1,706 youth with 
         </div>
         <div className="col-md-9">
             <h3><b>Software Developer - Computer Science Club</b></h3>
-          <p>May 2024 - Present</p>
+          <p>May 2024 - December 2024</p>
           <hr />
           <ul>
             <li>
@@ -125,194 +249,11 @@ improving interactivity and upgrading site styling
           </ul>
         </div>
       </div>
-      <div className="row gx-4 mb-3">
-        <div className="col-md-3 ps-3">
-          <a
-            href="https://www.linkedin.com/company/laurier-case-competition-team/mycompany/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src={LCT}
-              alt="Laurier Case Team Logo" width="100%" height="1000px"     className="rounded img-fluid"
-            />
-          </a>
-        </div>
-        <div className="col-md-9">
-            <h3><b>Competitor - Laurier Case Team</b></h3>
-          <p>September 2023 - Present</p>
-          <hr />
-          <ul>
-          <li>
-            Selected to represent Wilfrid Laurier University at JDCC, Canada’s largest undergraduate case competition
-            </li>
-            <li>
-            Applied analytical and critical thinking skills to dissect business case studies, research industry trends and present compelling solutions to a judge panel on a weekly basis
-            </li>
-            <li>
-              Utilized Excel to perform financial analysis to justify the viability of recommendations
-            </li>
-            <li>
-              Collaborated with faculty, sponsors, and fellow executives to secure funding, speakers, and resources for the Laurier 
-              Interactive Case Summit, a case competition involving 100+ students, 5 universities and $7000 in prizes from Deloitte
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div className="row gx-4 mb-3">
-        <div className="col-md-3 ps-3">
-          <a
-            href="https://sites.google.com/site/mackenziescienceclub"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <img
-              src={mscLogo}
-              alt="Mackenzie Science Club Logo"width="100%" height="1000px"     className="rounded img-fluid"
-            />
-          </a>
-        </div>
-        <div className="col-md-9">
-            <h3><b>President - Mackenzie Science Club</b></h3>
-          <p>June 2022-June 2023</p>
-          <hr />
-          <ul>
-            <li>
-              Organize and coordinate 30+ weekly interactive STEM events a year
-              for 200+ members
-            </li>
-            <li>
-              Host and manage an annual Science and Engineering Olympiad for 20+
-              middle schools and 700+ participants in total
-            </li>
-            <li>Lead monthly executive meetings </li>
-            <li>Mentor event designers in developing events</li>
-            <li>Previously served as Co-Vice President and Event Designer</li>
-          </ul>
-        </div>
-      </div>
-      <div className="row gx-4 mb-3">
-        <div className="col-md-3 ps-3">
-          <a href="https://jefferyhu.me/DECA-Website/" target="_blank" rel="noopener noreferrer">
-            <img
-              src={decaLogo}
-              alt="DECA Mackenzie Logo"width="100%" height="1000px"     className="rounded img-fluid"
-            />
-          </a>
-        </div>
-        <div className="col-md-9">
-          <h3>
-            <b>President - DECA Mackenzie</b>
-          </h3>
-          <p>June 2022-June 2023</p>
-          <hr />
-          <ul>
-            <li>
-              DECA is a business case competition where students compete in
-              different events.
-            </li>
-            <li>
-              Lead 10 other executives to help train 60+ members in preparation
-              for the competition.
-            </li>
-            <li>
-              Run weekly training sessions and organize chapter-wide events.
-            </li>
-            <li>
-              57 out of 62 members qualified for DECA provincials this year.
-            </li>
-            <li>Previously served as trainer for 2 years.</li>
-          </ul>
-        </div>
-      </div>
-      
 
-      <div className="row gx-4 mb-3">
-        <div className="col-md-3 ps-3">
-          <a href="https://maclyonsden.com/" target="_blank" rel="noopener noreferrer">
-            <img
-              src={metro}
-              alt="Mac Lyons Den Logo"width="100%" height="1000px"     className="rounded img-fluid"
-            />
-          </a>
-        </div>
-        <div className="col-md-9">
-          <h3>
-            <b>Front-End Developer - Project Metropolis</b>
-          </h3>
-          <p>August 2022-June 2023</p>
-          <hr />
-          <ul>
-            <li>
-            	Implemented a Rich Text Editor and announcement creation interface in React.js, enabling executives from 60+ clubs to post announcements on William Lyon Mackenzie CI’s official website.
-            </li>
-            <li>
-              Designed a user-friendly announcement viewing page for 600+ students, enhancing announcement accessibility and increasing platform users by 20%.
-            </li>
-            <li>
-              Utilized Agile principles to collaborate with other developers and deliver new features on time.
-            </li>
-          </ul>
-        </div>
-      </div>
-
-      <div className="row gx-4 mb-3">
-        <div className="col-md-3 ps-3">
-          <img
-            src={SMS}
-            alt="Spirit of Math Logo"width="100%" height="1000px"   className="rounded img-fluid"
-          />
-        </div>
-        <div className="col-md-9">
-          <h3>
-            <b>Assistant Teacher - Spirit of Math Schools</b>
-          </h3>
-          <p>September 2019-June 2023</p>
-          <hr />
-          <ul>
-            <li>
-              Tutor and mentor 20+ middle school students to teach them advanced
-              math concepts.
-            </li>
-            <li>
-              Lead class discussions and engage with students during group work time.
-            </li>
-            <li>Complete administrative tasks such as calling parents and inputting marks. </li>
-          </ul>
-        </div>
-      </div>
-
-      <div className="row gx-4 mb-3 mt-5">
-        <div className="col-md-3 ps-3">
-          <img
-            src={modelUN}
-            alt="Model UN Logo"width="100%" height="1000px"   className="rounded img-fluid"
-          />
-        </div>
-        <div className="col-md-9">
-          <h3>
-            <b>Executive - Mackenzie Model UN</b>
-          </h3>
-          <p>June 2022-June 2023</p>
-          <hr />
-          <ul>
-            <li>
-              Train 50+ members in preparation for Model United Nations
-              Conferences.
-            </li>
-            <li>
-              Develop and teach lessons about international relations related to
-              the competition.
-            </li>
-            <li>
-              Previously served as a member for 2 years.
-            </li>
-          </ul>
-        </div>
-      </div>
+    
       <hr />
       <footer>
-        <p>© 2024 - Jeffery Hu</p>
+        <p>© 2025 - Jeffery Hu</p>
       </footer>
     </div>
   );
