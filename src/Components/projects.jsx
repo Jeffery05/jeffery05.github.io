@@ -69,14 +69,6 @@ export default function Projects() {
             </p>
           </div>
           <div className="card-footer">
-          <a
-              href="https://meet-up-300c2e0fdbd2.herokuapp.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn btn-primary "
-            >
-              View Website
-            </a>
             <a
               href="https://www.youtube.com/watch?v=Sja8227G8SQ"
               target="_blank"
@@ -216,14 +208,6 @@ export default function Projects() {
             </p>
           </div>
           <div className="card-footer">
-          <a
-              href="https://trash-dash-htv.herokuapp.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn btn-primary "
-            >
-              View Website
-            </a>
             <a
               href="https://devpost.com/software/trashdash"
               target="_blank"
