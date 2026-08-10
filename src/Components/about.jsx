@@ -1,261 +1,97 @@
-import React, { Component } from "react";
-import potrait from "./images/JefferyWebPhoto.JPG";
-import github from "./images/GitHub.png";
-import devpost from "./images/DevPost.jpg";
-import dmoj from "./images/Dmoj.png";
-import mcpt from "./images/MCPT.png";
-import linkedin from "./images/LinkedIn.png";
-import gmail from "./images/Gmail Logo.png";
-import softwareDev from "./images/Software Development.svg";
-import business from "./images/Business.svg";
-import sports from "./images/Sports.svg";
-import community from "./images/Community.svg";
-import travel from "./images/Travel.svg";
-import hackathons from "./images/Hackathons.svg";
-import machineLearning from "./images/Machine Learning.svg";
-import mandarin from "./images/Mandarin.svg";
-import movie from "./images/Movie.png";
+import { motion } from 'framer-motion';
+import portrait from './images/JefferyWebPhoto.JPG';
+import github from './images/GitHub.png';
+import devpost from './images/DevPost.jpg';
+import linkedin from './images/LinkedIn.png';
+import gmail from './images/Gmail Logo.png';
+import styles from './about.module.css';
+
+const skills = {
+  'Programming Languages': ['Python', 'Java', 'kdb+/q', 'C++', 'SQL', 'VBA', 'R'],
+  'Data & AI': [
+    'Pandas', 'NumPy', 'Apache Spark (PySpark)', 'XGBoost', 'CatBoost',
+    'Databricks', 'Azure', 'Linux', 'Claude', 'Bloomberg Terminal',
+  ],
+};
+
+const socialLinks = [
+  { href: 'https://www.linkedin.com/in/jeffery-hu/', img: linkedin, label: 'LinkedIn' },
+  { href: 'mailto:jefferyhu8@gmail.com', img: gmail, label: 'Email' },
+  { href: 'https://github.com/Jeffery05', img: github, label: 'GitHub' },
+  {
+    href: 'https://devpost.com/jeffery-hu',
+    img: devpost,
+    label: 'DevPost',
+  },
+];
 
 export default function About() {
   return (
-    <div className="about container">
-      <div className="row gx-5 about-hello">
-        <div className="col-md-8">
-          <h1 className="my-3">
-            <b>Hello!</b>
-          </h1>
-          <p>
-            I'm Jeffery, a Computer Science and Business Administration double degree student at the University of Waterloo and Wilfrid Laurier University. I'm particularly interested in the intersection of technology and finance, with experience in software development, quantitative research, and financial strategy. Outside of academics, I enjoy building projects for hackathons, competing in case competitions, and staying active through sports. I'm driven by curiosity, a desire to solve challenging problems, and a passion for creating practical, real-world impact.
-          </p>
+    <motion.div
+      className="page"
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      exit={{ opacity: 0, y: -10 }}
+      transition={{ duration: 0.35, ease: 'easeOut' }}
+    >
+      <p className="section-title">About</p>
+      <div className={styles.about}>
+        <div className={styles.hero}>
+          <div className={styles.bio}>
+            <h1>Jeffery Hu</h1>
+            <p>
+              I'm a Computer Science student at the University of Waterloo, pursuing a dual
+              specialization in Artificial Intelligence and Business. Over the past two years I've
+              worked across quantitative trading desks, software teams, and a research lab — trading
+              corporate investment-grade bonds at TransMarket Group, building electronic FX analytics
+              at CIBC, running transaction cost analysis at OTPP, and developing ML-driven crypto
+              signals under the director of the Cheriton School of Computer Science. Outside of
+              internships, I compete internationally in case competitions for Wilfrid Laurier, lead a
+              team building a vega-neutral dispersion strategy at FARMSA, and built a financial
+              literacy app used by 1,706 students with developmental disabilities at Blueprint.
+            </p>
+            <p>
+              When I'm not coding or at a desk, I run (just finished my first half marathon!), follow
+              geopolitics obsessively, and watch too many movies.
+            </p>
+          </div>
+          <div className={styles.portrait}>
+            <img src={portrait} alt="Jeffery Hu" />
+          </div>
         </div>
-        <div className="col-md-4 portrait">
-          <img src={potrait} alt="Jeffery Hu Potrait" />
+
+        <div className={styles.skills}>
+          <p className="section-title">Skills</p>
+          {Object.entries(skills).map(([group, items]) => (
+            <div key={group} className={styles.skillGroup}>
+              <span className={styles.skillLabel}>{group}</span>
+              <div className={styles.pills}>
+                {items.map(skill => (
+                  <span key={skill} className={styles.pill}>{skill}</span>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <div>
+          <p className="section-title">Find Me</p>
+          <div className={styles.social}>
+            {socialLinks.map(({ href, img, label }) => (
+              <a
+                key={label}
+                href={href}
+                className={styles.socialLink}
+                target={href.startsWith('mailto') ? undefined : '_blank'}
+                rel={href.startsWith('mailto') ? undefined : 'noopener noreferrer'}
+              >
+                <img src={img} alt={label} />
+                {label}
+              </a>
+            ))}
+          </div>
         </div>
       </div>
-
-      <div className="row gx-5">
-        <h1> Passions</h1>
-        <div className="col-md-4 icon-card">
-          <div className="abt-icon">
-          <img
-            src={softwareDev}
-            alt="Software Development"
-           
-            className=" img-fluid"
-          /></div>
-          <h3>Software Development</h3>
-          <p>
-            I love the creative nature of building software applications where advancements in technology can be applied to limitless fields.
-          </p>
-        </div>
-        <div className="col-md-4 icon-card">
-          <div className="abt-icon">
-          <img
-            src={business}
-            alt="Business"
-           
-            className=" img-fluid"
-          /></div>
-          <h3>Financial Markets</h3>
-          <p>
-            I am intrigued by the financial system and how current events, businesses and central banks shape our economy today.
-          </p>
-        </div>
-        <div className="col-md-4 icon-card">
-          <div className="abt-icon">
-          <img
-            src={community}
-            alt="Community Building"
-           
-            className=" img-fluid"
-          /></div>
-          <h3>Community Building</h3>
-          <p>
-            I am passionate about giving back to the community, whether through organizing events, mentoring others or supporting charities. 
-          </p>
-        </div>
-      </div>
-
-      <div className="row gx-5 mb-6 mt-6">
-        <h1>
-          <b>Current Interests</b>
-        </h1>
-        <div className="col-md-4 icon-card">
-          <div className="abt-icon">
-          <img
-            src={machineLearning}
-            alt="Machine Learning"
-           
-            className=" img-fluid"
-          /></div>
-          <h3>Generative AI</h3>
-          <p>
-            I would like to take a deeper dive into Generative AI, which has the potential to revolutionize the way we work, travel, and live.
-          </p>
-        </div>
-        <div className="col-md-4 icon-card">
-          <div className="abt-icon">
-          <img
-            src={hackathons}
-            alt="Quantitative Trading"
-           
-            className=" img-fluid"
-          /></div>
-          <h3>Quantitative Trading</h3>
-          <p>
-          I am eager to learn more about quantitative trading, exploring algorithms and financial indicators to formulate trade strategies.
-          </p>
-        </div>
-        <div className="col-md-4 icon-card">
-          <div className="abt-icon">
-          <img
-            src={mandarin}
-            alt="Mandarin"
-
-            className=" img-fluid"
-          /></div>
-          <h3>Mandarin</h3>
-          <p>
-            I would like to learn more mandarin to speak to my family and
-            friends!
-          </p>
-        </div>
-      </div>
-
-      <div className="row gx-5 mb-6 mt-6">
-        <h1>
-          <b>Other Interests</b>
-        </h1>
-        <div className="col-md-4 icon-card">
-          <div className="abt-icon">
-          <img
-            src={sports}
-            alt="Sports"
-           
-            className=" img-fluid"
-          /></div>
-          <h3>Sports</h3>
-          <p>
-            I love to exercise and play sports, including soccer, badminton, and
-            ultimate frisbee.
-          </p>
-        </div>
-        <div className="col-md-4 icon-card">
-          <div className="abt-icon">
-          <img
-            src={movie}
-            alt="Movie"
-           
-            className=" img-fluid"
-          /></div>
-          <h3>Movies</h3>
-          <p>
-            I enjoy watching movies with friends, with some of my favourites being the Hunger Games series and Oppenheimer.
-          </p>
-        </div>
-        <div className="col-md-4 icon-card">
-          <div className="abt-icon">
-          <img
-            src={travel}
-            alt="Travel"
-            className=" img-fluid"
-          /></div>
-          <h3>Travel</h3>
-          <p>I enjoy exploring new places and experiencing new cultures!</p>
-        </div>
-      </div>
-
-      <div className="row gx-5 mb-6 mt-6">
-        <div className="col-md-6">
-          <h3 className="p-6"><b>Programming Languages:</b></h3>
-          <p>
-            <ul>
-              <li>Python</li>
-              <li>Java</li>
-              <li>JavaScript/TypeScript</li>
-              <li>HTML/CSS</li>
-              <li>SQL</li>
-              <li>C/C++</li>
-            </ul>
-          </p>
-        </div>
-        <div className="col-md-6 findme">
-          <h3 className="mb-2"><b>Find Me:</b></h3>
-          <p>
-            <a
-              href="https://www.linkedin.com/in/jeffery-hu/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src={linkedin}
-                alt="LinkedIn Logo"
-                className="rounded img-fluid"
-              />
-            </a>
-            <a href="mailto:jefferyhu8@gmail.com" target="_blank" rel="noopener noreferrer">
-              <img src={gmail} alt="Gmail Logo" className="rounded img-fluid" />
-            </a>
-            <a
-              href="https://github.com/Jeffery05"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src={github}
-                alt="Github Logo"
-                className="rounded img-fluid"
-              />
-            </a>
-            <a
-              href="https://devpost.com/jeffery-hu?ref_content=user-portfolio&ref_feature=portfolio&ref_medium=global-nav"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src={devpost}
-                alt="DevPost Logo"
-                width="100%"
-                height="100%"
-                className="rounded img-fluid"
-              />
-            </a>
-            <a
-              href="https://dmoj.ca/user/FalconX"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src={dmoj}
-                alt="Dmoj Logo"
-                width="100%"
-                height="100%"
-                className="rounded img-fluid"
-              />
-            </a>
-            <a
-              href="https://mcpt.ca/user/FalconX"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <img
-                src={mcpt}
-                alt="MCPT Logo"
-                width="100%"
-                height="100%"
-                className="rounded img-fluid"
-              />
-            </a>
-          </p>
-        </div>
-      </div>
-      <hr />
-      <footer>
-        <p>© 2025 - Jeffery Hu</p>
-      </footer>
-    </div>
+    </motion.div>
   );
 }
-/*
-          
-          */

@@ -21,3 +21,8 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# local scratch — this repo is public, keep these out of it
+.playwright-mcp/
+revamp.patch
+/Jeffery Hu - 2027 Quant Trading Resume.pdf

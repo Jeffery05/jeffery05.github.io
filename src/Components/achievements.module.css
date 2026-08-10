@@ -1,0 +1,383 @@
+/* ── Timeline layout ──
+   One chronological list: every entry gets its own row, alternating sides.
+   --gutter is a card's edge to the spine, i.e. half the middle column. */
+.timelineWrapper {
+  --spine-col: 120px;
+  --gutter: calc(var(--spine-col) / 2);
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr var(--spine-col) 1fr;
+  row-gap: 1.5rem;
+  margin-bottom: 5rem;
+}
+
+/* Overlaid rather than placed in the grid: the rows are implicit, so
+   `grid-row: 1 / -1` would only span the explicit grid — one row. Both side
+   columns are 1fr, so the wrapper's centre is the middle column's centre. */
+.spineContainer {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: var(--spine-col);
+  display: flex;
+  justify-content: center;
+  pointer-events: none;
+}
+
+.spine {
+  width: 2px;
+  background: var(--gold);
+  transform-origin: top;
+  transform: scaleY(0);
+  transition: transform 1.4s ease;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+}
+
+.spine.visible {
+  transform: scaleY(1);
+}
+
+/* Each track stacks cards vertically */
+/* ── Connector and node ──
+   The card itself clips its contents, so these live on a wrapper around it. */
+.cardWrap {
+  position: relative;
+}
+
+.left {
+  grid-column: 1;
+}
+
+.right {
+  grid-column: 3;
+}
+
+.connector,
+.node {
+  position: absolute;
+  pointer-events: none;
+}
+
+.connector {
+  top: 34px;
+  width: var(--gutter);
+  height: 1px;
+}
+
+.node {
+  top: 30px;
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--gold);
+  box-shadow: 0 0 0 3px var(--bg), 0 0 10px rgba(201, 168, 76, 0.55);
+}
+
+.left .connector {
+  left: 100%;
+}
+
+.left .node {
+  left: calc(100% + var(--gutter) - 4.5px);
+}
+
+.right .connector {
+  right: 100%;
+}
+
+.right .node {
+  right: calc(100% + var(--gutter) - 4.5px);
+}
+
+/* ── Work vs clubs ──
+   Gold for paid work and research, blue for student clubs and leadership.
+   Carried by the node, the connector and the org name. */
+.left.work .connector {
+  background: linear-gradient(to right, rgba(201, 168, 76, 0.12), var(--gold));
+}
+
+.right.work .connector {
+  background: linear-gradient(to left, rgba(201, 168, 76, 0.12), var(--gold));
+}
+
+.left.club .connector {
+  background: linear-gradient(to right, rgba(74, 158, 255, 0.12), var(--blue));
+}
+
+.right.club .connector {
+  background: linear-gradient(to left, rgba(74, 158, 255, 0.12), var(--blue));
+}
+
+.club .node {
+  background: var(--blue);
+  box-shadow: 0 0 0 3px var(--bg), 0 0 10px rgba(74, 158, 255, 0.5);
+}
+
+.club .cardOrg {
+  color: var(--blue);
+}
+
+/* ── Legend ── */
+.legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.legendItem {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+}
+
+.legendDot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.legendWork {
+  background: var(--gold);
+  box-shadow: 0 0 8px rgba(201, 168, 76, 0.5);
+}
+
+.legendClub {
+  background: var(--blue);
+  box-shadow: 0 0 8px rgba(74, 158, 255, 0.45);
+}
+
+/* Year markers, positioned level with the first entry of that year and
+   masking the spine behind them. */
+.spineYear {
+  position: absolute;
+  left: 50%;
+  /* Lifted clear of the node dot, which sits at the same point on the spine. */
+  transform: translate(-50%, calc(-50% - 22px));
+  z-index: 2;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  color: var(--gold);
+  background: var(--bg);
+  padding: 0.4rem 0.25rem;
+}
+
+/* ── Timeline card ── */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: border-color 0.2s;
+}
+
+/* The whole card is outlined in its kind's colour. */
+.work .card {
+  border-color: rgba(201, 168, 76, 0.5);
+}
+
+.work .card:hover {
+  border-color: var(--gold);
+  box-shadow: 0 0 18px rgba(201, 168, 76, 0.15);
+}
+
+.club .card {
+  border-color: rgba(74, 158, 255, 0.45);
+}
+
+.club .card:hover {
+  border-color: var(--blue);
+  box-shadow: 0 0 18px rgba(74, 158, 255, 0.15);
+}
+
+.cardHeader {
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.logoBox {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  overflow: hidden;
+  /* Lighter than the card, not darker — a dark tile reads as a hole. */
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+
+.logoBox img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.logoBadge {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+  border-radius: 6px;
+  background: var(--bg);
+  border: 1px solid var(--gold);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.6rem;
+  font-weight: 500;
+  color: var(--gold);
+  letter-spacing: 0.05em;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.cardMeta {
+  flex: 1;
+  min-width: 0;
+}
+
+.cardRole {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.2rem;
+  line-height: 1.3;
+}
+
+.cardOrg {
+  font-size: 0.8rem;
+  color: var(--gold);
+  font-weight: 500;
+  margin-bottom: 0.15rem;
+}
+
+.cardDate {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--muted);
+}
+
+/* Location trails the date, wrapping to its own line when space is tight. */
+.cardLocation::before {
+  content: '·';
+  margin: 0 0.45rem;
+  opacity: 0.6;
+}
+
+.cardRight {
+  flex-shrink: 0;
+}
+
+.currentBadge {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.65rem;
+  font-weight: 500;
+  color: var(--green);
+  border: 1px solid var(--green);
+  border-radius: 3px;
+  padding: 0.15rem 0.4rem;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+
+.cardTagline {
+  font-size: 0.83rem;
+  color: var(--muted);
+  line-height: 1.55;
+  padding: 0 1.5rem 1.25rem 1.5rem;
+  border-top: 1px solid var(--border);
+  padding-top: 0.85rem;
+}
+
+/* ── Recognition section ── */
+.recognition {
+  margin-bottom: 2rem;
+}
+
+.awardsGrid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.25rem;
+}
+
+.awardCard {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 1.5rem;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.awardCard:hover {
+  border-color: rgba(201, 168, 76, 0.4);
+  transform: translateY(-2px);
+}
+
+.awardPlacement {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--gold);
+  margin-bottom: 0.4rem;
+}
+
+.awardName {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+  line-height: 1.3;
+}
+
+.awardScope {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.72rem;
+  color: var(--muted);
+  line-height: 1.4;
+}
+
+/* ── Responsive ── */
+@media (max-width: 768px) {
+  .timelineWrapper {
+    grid-template-columns: 1fr;
+    /* Cards start offset on the x axis before they reveal. With one column
+       that offset would push past the viewport edge and scroll the page
+       sideways, so clip it — the cards still slide in from the edge. */
+    overflow-x: hidden;
+  }
+
+  .spineContainer,
+  .connector,
+  .node,
+  .spineYear {
+    display: none;
+  }
+
+  /* Collapse both sides into the single column. The inline grid-row keeps
+     them in chronological order. */
+  .left,
+  .right {
+    grid-column: 1;
+  }
+
+  .awardsGrid {
+    grid-template-columns: 1fr;
+  }
+}
