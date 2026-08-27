@@ -74,7 +74,7 @@ export default function About() {
           ))}
         </div>
 
-        <div>
+        <div className={styles.findMe}>
           <p className="section-title">Find Me</p>
           <div className={styles.social}>
             {socialLinks.map(({ href, img, label }) => (
